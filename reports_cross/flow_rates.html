@@ -1,0 +1,2680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.2, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1250">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.AfterCaption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Batch
+{
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.BeforeCaption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Body
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.BodyDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.ByContentFolder
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Byline
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.BylineContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.Caption
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Cell
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Container
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ContentFolder
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentProcLabel
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ContentProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Contents
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.ContentsDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.ContentTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Continued
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: left;
+}
+.Data
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.DataStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.Date
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.Document
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+a:link {
+color:#800080
+}
+a:visited {
+color:#0000FF
+}
+a:active {
+color:#0000FF
+}
+.ErrorBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ErrorContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ErrorContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ExtendedPage
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 2pt;
+  border: 1pt solid #000000;
+  text-align: center;
+}
+.FatalBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FatalContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FatalContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FolderAction
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Footer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.FooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Frame
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Graph
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.Header
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeadersAndFooters
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.HeaderStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.HeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.Index
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.IndexAction
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.IndexTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.LayoutContainer
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.LayoutRegion
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.List
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: disc;
+  width: 100%;
+  text-align: left;
+}
+.List10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: circle;
+  width: 100%;
+  text-align: left;
+}
+.List3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.ListItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ListItem9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Note
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.NoteContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Output
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #C1C1C1;
+}
+.PageNo
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 0px;
+  border-spacing: 0px;
+  text-align: right;
+  vertical-align: top;
+}
+.Pages
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.PagesDate
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+}
+.PagesItem
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.PagesProcLabel
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.PagesProcName
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.PagesTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.Paragraph
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  width: 100%;
+  text-align: left;
+}
+.Parskip
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  padding: 0px;
+  border-spacing: 0px;
+  border: 0px solid #000000;
+}
+.PrePage
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  text-align: left;
+}
+.ProcTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.ProcTitleFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooter
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowFooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.RowHeader
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmphasis
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderEmpty
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderStrong
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.RowHeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  background-color: #F5F7F1;
+  border-top-width: 0px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.SystemFooter
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemFooter9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle10
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle2
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle3
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle4
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle5
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle6
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle7
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle8
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SystemTitle9
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.SysTitleAndFooterContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.Table
+{
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-top-width: 1px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 1px;
+  border-color: #C1C1C1;
+  border-style: solid;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+}
+.TitleAndNoteContainer
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.TitlesAndFooters
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.UserText
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+  text-align: left;
+}
+.WarnBanner
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.WarnContent
+{
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.WarnContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D8DBD3;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Flow rates on all data</td>
+</tr>
+</table><br>
+<div>
+<CENTER>
+<OBJECT 
+ CLASSID="CLSID:CE9E88DD-FC6F-11d4-87EC-00B0D025628B"
+ CODEBASE="http://www2.sas.com/codebase/graph/v92/sasgraph.exe#version=9,2"
+style=" width: 640px; height: 480px; border-width: 0px;" ALIGN="top" class="Graph">
+<PARAM NAME="ENCODING" VALUE="windows-1250">
+<PARAM NAME="XMLPARM1" VALUE='
+<?xml version="1.0" encoding="windows-1250" ?>
+<SASReport version="1.0" xmlns:style="http://www.sas.com/sasreportmodel/styles">
+  <Data>
+    <IQData type="2DEmbedded" name="GraphData">
+      <EmbeddedData>
+        <Variables>
+          <Variable SASFormat="NLPCT12.2" encoding="Text" name="percent9" varName="percent" label="percent" type="Numeric"/>
+          <Variable encoding="Text" name="year1" varName="year" label="year" type="String"/>
+          <Variable encoding="Text" name="Flow4" varName="Flow" label="Flow" type="String"/>
+        </Variables>
+        <ValuesList>
+        '
+        >
+        <PARAM NAME="XMLPARM2" VALUE='
+          <V>0.23821656050955</V>
+          <V>1970</V>
+          <V>0-1</V>
+          <V>0.37391304347826</V>
+          <V>1970</V>
+          <V>1-2</V>
+          <V>0.61842105263157</V>
+          <V>1970</V>
+          <V>2-3</V>
+          <V>0.88888888888888</V>
+          <V>1970</V>
+          <V>3-4</V>
+          <V>0.95454545454545</V>
+          <V>1970</V>
+          <V>4-5</V>
+          <V>0.93333333333333</V>
+          <V>1970</V>
+          <V>5-6</V>
+          <V>1</V>
+          <V>1970</V>
+          <V>6-7</V>
+          <V>0.22828836424957</V>
+          <V>1971</V>
+          <V>0-1</V>
+          <V>0.37396121883656</V>
+          <V>1971</V>
+          <V>1-2</V>
+          <V>0.59571619812583</V>
+          <V>1971</V>
+          <V>2-3</V>
+          <V>0.83183856502242</V>
+          <V>1971</V>
+          <V>3-4</V>
+          <V>0.86723163841807</V>
+          <V>1971</V>
+          <V>4-5</V>
+          <V>0.97069597069597</V>
+          <V>1971</V>
+          <V>5-6</V>
+          <V>1</V>
+          <V>1971</V>
+          <V>6-7</V>
+          <V>0.23669911704777</V>
+          <V>1972</V>
+          <V>0-1</V>
+          <V>0.37089439110661</V>
+          <V>1972</V>
+          <V>1-2</V>
+          <V>0.58803611738148</V>
+          <V>1972</V>
+          <V>2-3</V>
+          <V>0.81684027777777</V>
+          <V>1972</V>
+          <V>3-4</V>
+          <V>0.85177664974619</V>
+          <V>1972</V>
+          <V>4-5</V>
+          <V>0.96182266009852</V>
+          <V>1972</V>
+          <V>5-6</V>
+          <V>0.99054054054054</V>
+          <V>1972</V>
+          <V>6-7</V>
+          <V>0.23783195866944</V>
+          <V>1973</V>
+          <V>0-1</V>
+          <V>0.38013765978367</V>
+          <V>1973</V>
+          <V>1-2</V>
+          <V>0.58918249380677</V>
+          <V>1973</V>
+          <V>2-3</V>
+          <V>0.82270795385549</V>
+          <V>1973</V>
+          <V>3-4</V>
+          <V>0.84355616815988</V>
+          <V>1973</V>
+          <V>4-5</V>
+          <V>0.96122778675282</V>
+          <V>1973</V>
+          <V>5-6</V>
+          <V>0.98733108108108</V>
+          <V>1973</V>
+          <V>6-7</V>
+          <V>0.2423938482113</V>
+          <V>1974</V>
+          <V>0-1</V>
+          <V>0.38147566718995</V>
+          <V>1974</V>
+          <V>1-2</V>
+          <V>0.59883083668249</V>
+          <V>1974</V>
+          <V>2-3</V>
+          <V>0.82430299842188</V>
+          <V>1974</V>
+          <V>3-4</V>
+          <V>0.85220500595947</V>
+          <V>1974</V>
+          <V>4-5</V>
+          <V>0.95898838004101</V>
+          <V>1974</V>
+          <V>5-6</V>
+          <V>0.98707824838478</V>
+          <V>1974</V>
+          <V>6-7</V>
+          <V>0.24409642505739</V>
+          <V>1975</V>
+          <V>0-1</V>
+          <V>0.39471440750213</V>
+          <V>1975</V>
+          <V>1-2</V>
+          <V>0.59959211420802</V>
+          <V>1975</V>
+          <V>2-3</V>
+          <V>0.82541222114452</V>
+          <V>1975</V>
+          <V>3-4</V>
+          <V>0.84841992501339</V>
+          <V>1975</V>
+          <V>4-5</V>
+          <V>0.9610630407911</V>
+          <V>1975</V>
+          <V>5-6</V>
+          <V>0.98780487804878</V>
+          <V>1975</V>
+          <V>6-7</V>
+          <V>0.24331915576598</V>
+          <V>1976</V>
+          <V>0-1</V>
+          <V>0.39554737194509</V>
+          <V>1976</V>
+          <V>1-2</V>
+          <V>0.60422252010723</V>
+          <V>1976</V>
+          <V>2-3</V>
+          <V>0.82477196351416</V>
+          <V>1976</V>
+          <V>3-4</V>
+          <V>0.84521276595744</V>
+          <V>1976</V>
+          <V>4-5</V>
+          <V>0.95982958003651</V>
+          <V>1976</V>
+          <V>5-6</V>
+          <V>0.98618957940991</V>
+          <V>1976</V>
+          <V>6-7</V>
+          <V>0.24248091008259</V>
+          <V>1977</V>
+          <V>0-1</V>
+          <V>0.39076175040518</V>
+          <V>1977</V>
+          <V>1-2</V>
+          <V>0.59874917709019</V>
+          <V>1977</V>
+          <V>2-3</V>
+          <V>0.82104274307186</V>
+          <V>1977</V>
+          <V>3-4</V>
+          <V>0.84914463452566</V>
+          <V>1977</V>
+          <V>4-5</V>
+          <V>0.96014277215942</V>
+          <V>1977</V>
+          <V>5-6</V>
+          <V>0.98768472906403</V>
+          <V>1977</V>
+          <V>6-7</V>
+          <V>0.24531371030209</V>
+          <V>1978</V>
+          <V>0-1</V>
+          <V>0.38967579477494</V>
+          <V>1978</V>
+          <V>1-2</V>
+          <V>0.59707192870782</V>
+          <V>1978</V>
+          <V>2-3</V>
+          <V>0.82996323529411</V>
+          <V>1978</V>
+          <V>3-4</V>
+          <V>0.84879032258064</V>
+          <V>1978</V>
+          <V>4-5</V>
+          <V>0.95970063327576</V>
+          <V>1978</V>
+          <V>5-6</V>
+          <V>0.98630136986301</V>
+          <V>1978</V>
+          <V>6-7</V>
+          <V>0.23964451313755</V>
+          <V>1979</V>
+          <V>0-1</V>
+          <V>0.39142484512552</V>
+          <V>1979</V>
+          <V>1-2</V>
+          <V>0.60013067624959</V>
+          <V>1979</V>
+          <V>2-3</V>
+          <V>0.82081194587027</V>
+          <V>1979</V>
+          <V>3-4</V>
+          <V>0.84997413347128</V>
+          <V>1979</V>
+          <V>4-5</V>
+          <V>0.96018735362997</V>
+          <V>1979</V>
+          <V>5-6</V>
+          <V>0.98607748184019</V>
+          <V>1979</V>
+          <V>6-7</V>
+          <V>0.24197840037564</V>
+          <V>1980</V>
+          <V>0-1</V>
+          <V>0.39325474787164</V>
+          <V>1980</V>
+          <V>1-2</V>
+          <V>0.5937601559961</V>
+          <V>1980</V>
+          <V>2-3</V>
+          <V>0.82</V>
+          <V>1980</V>
+          <V>3-4</V>
+          <V>0.84795018162947</V>
+          <V>1980</V>
+          <V>4-5</V>
+          <V>0.9595478881618</V>
+          <V>1980</V>
+          <V>5-6</V>
+          <V>0.98648648648648</V>
+          <V>1980</V>
+          <V>6-7</V>
+          <V>0.2314403796112</V>
+          <V>1981</V>
+          <V>0-1</V>
+          <V>0.38432154127221</V>
+          <V>1981</V>
+          <V>1-2</V>
+          <V>0.59284497444633</V>
+          <V>1981</V>
+          <V>2-3</V>
+          <V>0.82514734774066</V>
+          <V>1981</V>
+          <V>3-4</V>
+          <V>0.84727468969239</V>
+          <V>1981</V>
+          <V>4-5</V>
+          <V>0.95820528580208</V>
+          <V>1981</V>
+          <V>5-6</V>
+          <V>0.98726114649681</V>
+          <V>1981</V>
+          <V>6-7</V>
+          <V>0.22652519893899</V>
+          <V>1982</V>
+          <V>0-1</V>
+          <V>0.37427959822163</V>
+          <V>1982</V>
+          <V>1-2</V>
+          <V>0.58224811514736</V>
+          <V>1982</V>
+          <V>2-3</V>
+          <V>0.81768231768231</V>
+          <V>1982</V>
+          <V>3-4</V>
+          <V>0.84454244762954</V>
+          <V>1982</V>
+          <V>4-5</V>
+          <V>0.95715185885318</V>
+          <V>1982</V>
+          <V>5-6</V>
+          <V>0.9855926653569</V>
+          <V>1982</V>
+          <V>6-7</V>
+          <V>0.22397783435674</V>
+          <V>1983</V>
+          <V>0-1</V>
+          <V>0.37143809365105</V>
+          <V>1983</V>
+          <V>1-2</V>
+          <V>0.58251748251748</V>
+          <V>1983</V>
+          <V>2-3</V>
+          <V>0.81620253164556</V>
+          <V>1983</V>
+          <V>3-4</V>
+          <V>0.84554230550823</V>
+          <V>1983</V>
+          <V>4-5</V>
+          <V>0.95870967741935</V>
+          <V>1983</V>
+          <V>5-6</V>
+          <V>0.98729946524064</V>
+          <V>1983</V>
+          <V>6-7</V>
+          <V>0.22040515653775</V>
+          <V>1984</V>
+          <V>0-1</V>
+          <V>0.36293245469522</V>
+          <V>1984</V>
+          <V>1-2</V>
+          <V>0.57227861393069</V>
+          <V>1984</V>
+          <V>2-3</V>
+          <V>0.8131811105345</V>
+          <V>1984</V>
+          <V>3-4</V>
+          <V>0.83976945244956</V>
+          <V>1984</V>
+          <V>4-5</V>
+          <V>0.95802798134576</V>
+          <V>1984</V>
+          <V>5-6</V>
+          <V>0.98628257887517</V>
+          <V>1984</V>
+          <V>6-7</V>
+          <V>0.21245236896973</V>
+          <V>1985</V>
+          <V>0-1</V>
+          <V>0.3572710951526</V>
+          <V>1985</V>
+          <V>1-2</V>
+          <V>0.57374735356386</V>
+          <V>1985</V>
+          <V>2-3</V>
+          <V>0.80789200415368</V>
+          <V>1985</V>
+          <V>3-4</V>
+          <V>0.83266012694749</V>
+          <V>1985</V>
+          <V>4-5</V>
+          <V>0.95646349631614</V>
+          <V>1985</V>
+          <V>5-6</V>
+          <V>0.98482758620689</V>
+          <V>1985</V>
+          <V>6-7</V>
+          <V>0.20485396955985</V>
+          <V>1986</V>
+          <V>0-1</V>
+          <V>0.34630350194552</V>
+          <V>1986</V>
+          <V>1-2</V>
+          <V>0.56667858419735</V>
+          <V>1986</V>
+          <V>2-3</V>
+          <V>0.81185983827493</V>
+          <V>1986</V>
+          <V>3-4</V>
+          <V>0.83642899940083</V>
+          <V>1986</V>
+          <V>4-5</V>
+          <V>0.95573997233748</V>
+          <V>1986</V>
+          <V>5-6</V>
+          <V>0.98637015781922</V>
+          <V>1986</V>
+          <V>6-7</V>
+          <V>0.19694072657743</V>
+          <V>1987</V>
+          <V>0-1</V>
+          <V>0.34711820253988</V>
+          <V>1987</V>
+          <V>1-2</V>
+          <V>0.56256800870511</V>
+          <V>1987</V>
+          <V>2-3</V>
+          <V>0.80972972972972</V>
+          <V>1987</V>
+          <V>3-4</V>
+          <V>0.83747725894481</V>
+          <V>1987</V>
+          <V>4-5</V>
+          <V>0.9551506657323</V>
+          <V>1987</V>
+          <V>5-6</V>
+          <V>0.98402323892519</V>
+          <V>1987</V>
+          <V>6-7</V>
+          <V>0.19212559182656</V>
+          <V>1988</V>
+          <V>0-1</V>
+          <V>0.33559375492824</V>
+          <V>1988</V>
+          <V>1-2</V>
+          <V>0.55792903692976</V>
+          <V>1988</V>
+          <V>2-3</V>
+          <V>0.80505216913783</V>
+          <V>1988</V>
+          <V>3-4</V>
+          <V>0.83190184049079</V>
+          <V>1988</V>
+          <V>4-5</V>
+          <V>0.95544554455445</V>
+          <V>1988</V>
+          <V>5-6</V>
+          <V>0.98311306901615</V>
+          <V>1988</V>
+          <V>6-7</V>
+          <V>0.18590722254844</V>
+          <V>1989</V>
+          <V>0-1</V>
+          <V>0.32788850591937</V>
+          <V>1989</V>
+          <V>1-2</V>
+          <V>0.55134945671223</V>
+          <V>1989</V>
+          <V>2-3</V>
+          <V>0.80311995696611</V>
+          <V>1989</V>
+          <V>3-4</V>
+          <V>0.83101150817686</V>
+          <V>1989</V>
+          <V>4-5</V>
+          <V>0.95602836879432</V>
+          <V>1989</V>
+          <V>5-6</V>
+          <V>0.98381162619573</V>
+          <V>1989</V>
+          <V>6-7</V>
+          <V>0.18272073177533</V>
+          <V>1990</V>
+          <V>0-1</V>
+          <V>0.32749817651349</V>
+          <V>1990</V>
+          <V>1-2</V>
+          <V>0.5457337883959</V>
+          <V>1990</V>
+          <V>2-3</V>
+          <V>0.80052356020942</V>
+          <V>1990</V>
+          <V>3-4</V>
+          <V>0.82744405182567</V>
+          <V>1990</V>
+          <V>4-5</V>
+          <V>0.9560741249142</V>
+          <V>1990</V>
+          <V>5-6</V>
+          <V>0.98286937901498</V>
+          <V>1990</V>
+          <V>6-7</V>
+          <V>0.17748666208863</V>
+          <V>1991</V>
+          <V>0-1</V>
+          <V>0.32478632478632</V>
+          <V>1991</V>
+          <V>1-2</V>
+          <V>0.5465505693235</V>
+          <V>1991</V>
+          <V>2-3</V>
+          <V>0.79948453608247</V>
+          <V>1991</V>
+          <V>3-4</V>
+          <V>0.82945285215366</V>
+          <V>1991</V>
+          <V>4-5</V>
+          <V>0.95522388059701</V>
+          <V>1991</V>
+          <V>5-6</V>
+          <V>0.98306280875088</V>
+          <V>1991</V>
+          <V>6-7</V>
+          <V>0.17597850334617</V>
+          <V>1992</V>
+          <V>0-1</V>
+          <V>0.32082474226804</V>
+          <V>1992</V>
+          <V>1-2</V>
+          <V>0.54509675303378</V>
+          <V>1992</V>
+          <V>2-3</V>
+          <V>0.79959616355376</V>
+          <V>1992</V>
+          <V>3-4</V>
+          <V>0.82896237172177</V>
+          <V>1992</V>
+          <V>4-5</V>
+          <V>0.95545212765957</V>
+          <V>1992</V>
+          <V>5-6</V>
+          <V>0.98341395991706</V>
+          <V>1992</V>
+          <V>6-7</V>
+          <V>0.17629702483403</V>
+          <V>1993</V>
+          <V>0-1</V>
+          <V>0.32363104731525</V>
+          <V>1993</V>
+          <V>1-2</V>
+          <V>0.54565560821485</V>
+          <V>1993</V>
+          <V>2-3</V>
+          <V>0.79872984855886</V>
+          <V>1993</V>
+          <V>3-4</V>
+          <V>0.82890365448504</V>
+          <V>1993</V>
+          <V>4-5</V>
+          <V>0.95486782720825</V>
+          <V>1993</V>
+          <V>5-6</V>
+          <V>0.98386012104909</V>
+          <V>1993</V>
+          <V>6-7</V>
+          <V>0.17588693674071</V>
+          <V>1994</V>
+          <V>0-1</V>
+          <V>0.32296587926509</V>
+          <V>1994</V>
+          <V>1-2</V>
+          <V>0.54568132210788</V>
+          <V>1994</V>
+          <V>2-3</V>
+          <V>0.79990494296577</V>
+          <V>1994</V>
+          <V>3-4</V>
+          <V>0.8283422459893</V>
+          <V>1994</V>
+          <V>4-5</V>
+          <V>0.95398009950248</V>
+          <V>1994</V>
+          <V>5-6</V>
+          <V>0.98447606727037</V>
+          <V>1994</V>
+          <V>6-7</V>
+          <V>0.17927551714091</V>
+          <V>1995</V>
+          <V>0-1</V>
+          <V>0.32272552290517</V>
+          <V>1995</V>
+          <V>1-2</V>
+          <V>0.54878048780487</V>
+          <V>1995</V>
+          <V>2-3</V>
+          <V>0.80224929709465</V>
+          <V>1995</V>
+          <V>3-4</V>
+          <V>0.82971972501322</V>
+          <V>1995</V>
+          <V>4-5</V>
+          <V>0.95446153846153</V>
+          <V>1995</V>
+          <V>5-6</V>
+          <V>0.98459563543003</V>
+          <V>1995</V>
+          <V>6-7</V>
+          <V>0.18320766252292</V>
+          <V>1996</V>
+          <V>0-1</V>
+          <V>0.32678359488329</V>
+          <V>1996</V>
+          <V>1-2</V>
+          <V>0.54857673267326</V>
+          <V>1996</V>
+          <V>2-3</V>
+          <V>0.80338664158043</V>
+          <V>1996</V>
+          <V>3-4</V>
+          <V>0.82526315789473</V>
+          <V>1996</V>
+          <V>4-5</V>
+          <V>0.95644171779141</V>
+          <V>1996</V>
+          <V>5-6</V>
+          <V>0.98477157360406</V>
+          <V>1996</V>
+          <V>6-7</V>
+          <V>0.18782452050439</V>
+          <V>1997</V>
+          <V>0-1</V>
+          <V>0.33153420591013</V>
+          <V>1997</V>
+          <V>1-2</V>
+          <V>0.5563182527301</V>
+          <V>1997</V>
+          <V>2-3</V>
+          <V>0.80160604629192</V>
+          <V>1997</V>
+          <V>3-4</V>
+          <V>0.83004794885455</V>
+          <V>1997</V>
+          <V>4-5</V>
+          <V>0.95468653010552</V>
+          <V>1997</V>
+          <V>5-6</V>
+          <V>0.984496124031</V>
+          <V>1997</V>
+          <V>6-7</V>
+          <V>0.19742001477524</V>
+          <V>1998</V>
+          <V>0-1</V>
+          <V>0.33769273127753</V>
+          <V>1998</V>
+          <V>1-2</V>
+          <V>0.55925809493869</V>
+          <V>1998</V>
+          <V>2-3</V>
+          <V>0.80707547169811</V>
+          <V>1998</V>
+          <V>3-4</V>
+          <V>0.83263157894736</V>
+          <V>1998</V>
+          <V>4-5</V>
+          <V>0.95681265206812</V>
+          <V>1998</V>
+          <V>5-6</V>
+          <V>0.98485804416403</V>
+          <V>1998</V>
+          <V>6-7</V>
+          <V>0.20395058708414</V>
+          <V>1999</V>
+          <V>0-1</V>
+          <V>0.34288169578917</V>
+          <V>1999</V>
+          <V>1-2</V>
+          <V>0.56418589535261</V>
+          <V>1999</V>
+          <V>2-3</V>
+          <V>0.80521991300145</V>
+          <V>1999</V>
+          <V>3-4</V>
+          <V>0.83360433604336</V>
+          <V>1999</V>
+          <V>4-5</V>
+          <V>0.95843828715365</V>
+          <V>1999</V>
+          <V>5-6</V>
+          <V>0.98442569759896</V>
+          <V>1999</V>
+          <V>6-7</V>
+          <V>0.21184270990612</V>
+          <V>2000</V>
+          <V>0-1</V>
+          <V>0.35221159593544</V>
+          <V>2000</V>
+          <V>1-2</V>
+          <V>0.56596995427824</V>
+          <V>2000</V>
+          <V>2-3</V>
+          <V>0.80853126514784</V>
+          <V>2000</V>
+          <V>3-4</V>
+          <V>0.84004352557127</V>
+          <V>2000</V>
+          <V>4-5</V>
+          <V>0.95942571785268</V>
+          <V>2000</V>
+          <V>5-6</V>
+          <V>0.98443579766536</V>
+          <V>2000</V>
+          <V>6-7</V>
+        </ValuesList>
+      </EmbeddedData>
+    </IQData>
+  </Data>
+'
+>
+<PARAM NAME="XMLPARM3" VALUE='
+  <style:Scheme name="GraphStyleScheme" version="9.2P">
+    <style:Style name="GraphScheme">
+      <style:Style context="GraphDataStyle1" color="#6F7EB3" altColor="#445694" fillType="Pattern" markerSymbol="circle" lineStyle="Solid"/>
+      <style:Style context="GraphDataStyle2" color="#D05B5B" altColor="#A23A2E" fillType="Pattern" markerSymbol="plus" lineStyle="Dash3"/>
+      <style:Style context="GraphDataStyle3" color="#66A5A0" altColor="#01665E" fillType="Pattern" markerSymbol="X" lineStyle="Dash3Dash1"/>
+      <style:Style context="GraphDataStyle4" color="#A9865B" altColor="#543005" fillType="Pattern" markerSymbol="triangle" lineStyle="Dash4"/>
+      <style:Style context="GraphDataStyle5" color="#B689CD" altColor="#9D3CDB" fillType="Pattern" markerSymbol="square" lineStyle="Dash3Dash1Dash1"/>
+      <style:Style context="GraphDataStyle6" color="#BABC5C" altColor="#7F8E1F" fillType="Pattern" markerSymbol="asterisk" lineStyle="Dash4Dash2"/>
+      <style:Style context="GraphDataStyle7" color="#94BDE1" altColor="#2597FA" fillType="Pattern" markerSymbol="diamond" lineStyle="Dash4Dash1Dash1"/>
+      <style:Style context="GraphDataStyle8" color="#CD7BA1" altColor="#B26084" fillType="Pattern" lineStyle="Dash2Space"/>
+      <style:Style context="GraphDataStyle9" color="#CF974B" altColor="#D17800" fillType="Pattern" lineStyle="Dash3Dot1"/>
+      <style:Style context="GraphDataStyle10" color="#87C873" altColor="#47A82A" fillType="Pattern" lineStyle="Dash3Dot2"/>
+      <style:Style context="GraphDataStyle11" color="#B7AEF1" altColor="#B38EF3" fillType="Pattern" lineStyle="Dash1"/>
+      <style:Style context="GraphDataStyle12" color="#DDD17E" altColor="#F9DA04" fillType="Pattern"/>
+      <style:Style context="GraphDataItem1" markerColor="CXFF0000" markerSymbol="DOT" markerSize="1.1627906561%" markerVisible="true" lineColor="CXFF0000" lineThickness="2px" lineStyle="Solid"/>
+      <style:Style context="GraphDataItem2" markerColor="CX008000" markerSymbol="DOT" markerSize="1.1627906561%" markerVisible="true" lineColor="CX008000" lineThickness="2px" lineStyle="Solid"/>
+      <style:Style context="GraphDataItem3" markerColor="CX0000FF" markerSymbol="DOT" markerSize="1.1627906561%" markerVisible="true" lineColor="CX0000FF" lineThickness="2px" lineStyle="Solid"/>
+      <style:Style context="GraphDataItem4" markerColor="CX000000" markerSymbol="DOT" markerSize="1.1627906561%" markerVisible="true" lineColor="CX000000" lineThickness="2px" lineStyle="Solid"/>
+      <style:Style context="GraphDataItem5" markerColor="CXFFFF00" markerSymbol="DOT" markerSize="1.1627906561%" markerVisible="true" lineColor="CXFFFF00" lineThickness="2px" lineStyle="Solid"/>
+      <style:Style context="GraphDataItem6" markerColor="CX00FFFF" markerSymbol="DOT" markerSize="1.1627906561%" markerVisible="true" lineColor="CX00FFFF" lineThickness="2px" lineStyle="Solid"/>
+      <style:Style context="GraphDataItem7" markerColor="CXA52A2A" markerSymbol="DOT" markerSize="1.1627906561%" markerVisible="true" lineColor="CXA52A2A" lineThickness="2px" lineStyle="Solid"/>
+      <style:Style context="TwoColorRamp" fillGradientStartColor="#F3F5FC" fillGradientEndColor="#445694"/>
+      <style:Style context="TwoColorAltRamp" fillGradientStartColor="#FFF1EF" fillGradientEndColor="#A23A23"/>
+      <style:Style context="ThreeColorRamp" fillGradientStartColor="#AFB5A6" fillGradientNeutralColor="#FFFFFF" fillGradientEndColor="#667FA2"/>
+      <style:Style context="ThreeColorAltRamp" fillGradientStartColor="#445694" fillGradientNeutralColor="#EBC79E" fillGradientEndColor="#FF3A2E"/>
+      <style:Style context="BackFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="AxisLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="GridLines" lineColor="#E6E6E6" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="ReferenceLines" lineColor="#A5A5A5" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="Outlines" lineColor="#000000" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="BorderLines" lineColor="#D1D1D1" lineStyle="Solid" lineThickness="1px"/>
+      <style:Style context="TitleText" textColor="#000000" fontSize="11pt" fontFamily="Arial, Albany AMT" fontWeight="bold" fontStyle="normal"/>
+      <style:Style context="FootnoteText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="italic"/>
+      <style:Style context="LabelText" textColor="#000000" fontSize="10pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="ValueText" textColor="#000000" fontSize="9pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="DataText" textColor="#000000" fontSize="7pt" fontFamily="Arial, Albany AMT" fontWeight="normal" fontStyle="normal"/>
+      <style:Style context="WallFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="FloorFill" fillColor="#DCDAC9" fillType="Pattern"/>
+      <style:Style context="LegendFill" fillColor="#FFFFFF" fillType="Pattern"/>
+      <style:Style context="DropShadow" shadowColor="#8F8F8F" xOffset="5%" yOffset="5%"/>
+    </style:Style>
+  </style:Scheme>
+  <View style:scheme="GraphStyleScheme">
+    <Section>
+      <Body>
+        <Graph name="Graph_196154670142417711" style:height="480px" style:width="640px" style:style="GraphScheme"  view2D="true" usePlotContrast="true">
+          <ChartDataList>
+            <ChartData name="ChartData0" collation="Linguistic" data="GraphData">
+              <Roles>
+                <Role variable="percent9" type="Response" statistic="None">
+                </Role>
+                <Role variable="year1" type="Category" sortOrder="Ascending">
+                </Role>
+                <Role variable="Flow4" type="Subgroup" sortOrder="Ascending" missingEnabled="true">
+                </Role>
+              </Roles>
+            </ChartData>
+          </ChartDataList>
+          <ChartAreas>
+            <ChartArea orientation="Horizontal">
+              <Walls>
+              </Walls>
+              <ChartBorderLine lineVisible="true"/>
+              <Charts>
+                <Plot name="Chart0" chartData="ChartData0" styleBy="Subgroup" excludeData="true">
+                  <Interpolations>
+                    <Interpolation value="0-1" type="Join" isFilled="false"/>
+                    <Interpolation value="1-2" type="Join" isFilled="false"/>
+                    <Interpolation value="2-3" type="Join" isFilled="false"/>
+                    <Interpolation value="3-4" type="Join" isFilled="false"/>
+                    <Interpolation value="4-5" type="Join" isFilled="false"/>
+                    <Interpolation value="5-6" type="Join" isFilled="false"/>
+                    <Interpolation value="6-7" type="Join" isFilled="false"/>
+                  </Interpolations>
+                </Plot>
+              </Charts>
+              <Axes>
+                <Axis name="Axis0" role="Response" appendLabelStatistic="true">
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+                <Axis name="Axis1" role="Category" majorTickCount="31">
+                  <Label textVisible="true"/>
+                  <AxisValues textVisible="true"/>
+                </Axis>
+              </Axes>
+            </ChartArea>
+          </ChartAreas>
+          <Legends>
+            <Legend chart="Chart0" isVisible="true" layoutOrder="Default" border="None">
+              <Background fillVisible="false"/>
+            </Legend>
+          </Legends>
+        </Graph>
+      </Body>
+    </Section>
+  </View>
+</SASReport>
+'
+>
+<PARAM NAME="XMLPARMCOUNT" VALUE="3">
+Sorry, there was a problem with the Graph control or plug-in in your browser.
+The graph "Plot of year by percent identified by Flow" cannot be displayed.
+</OBJECT> 
+</CENTER>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br></p><hr size="3">
+<a name="IDX1"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Flow rates on all data</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="Table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m Header" rowspan="2" scope="col">&nbsp;</th>
+<th class="c Header" colspan="7" scope="colgroup">Flow</th>
+</tr>
+<tr>
+<th class="c Header" scope="col">0-1</th>
+<th class="c Header" scope="col">1-2</th>
+<th class="c Header" scope="col">2-3</th>
+<th class="c Header" scope="col">3-4</th>
+<th class="c Header" scope="col">4-5</th>
+<th class="c Header" scope="col">5-6</th>
+<th class="c Header" scope="col">6-7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t RowHeader" scope="row">1970</th>
+<td class="r b Data">      23,82%</td>
+<td class="r b Data">      37,39%</td>
+<td class="r b Data">      61,84%</td>
+<td class="r b Data">      88,89%</td>
+<td class="r b Data">      95,45%</td>
+<td class="r b Data">      93,33%</td>
+<td class="r b Data">     100,00%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1971</th>
+<td class="r b Data">      22,83%</td>
+<td class="r b Data">      37,40%</td>
+<td class="r b Data">      59,57%</td>
+<td class="r b Data">      83,18%</td>
+<td class="r b Data">      86,72%</td>
+<td class="r b Data">      97,07%</td>
+<td class="r b Data">     100,00%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1972</th>
+<td class="r b Data">      23,67%</td>
+<td class="r b Data">      37,09%</td>
+<td class="r b Data">      58,80%</td>
+<td class="r b Data">      81,68%</td>
+<td class="r b Data">      85,18%</td>
+<td class="r b Data">      96,18%</td>
+<td class="r b Data">      99,05%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1973</th>
+<td class="r b Data">      23,78%</td>
+<td class="r b Data">      38,01%</td>
+<td class="r b Data">      58,92%</td>
+<td class="r b Data">      82,27%</td>
+<td class="r b Data">      84,36%</td>
+<td class="r b Data">      96,12%</td>
+<td class="r b Data">      98,73%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1974</th>
+<td class="r b Data">      24,24%</td>
+<td class="r b Data">      38,15%</td>
+<td class="r b Data">      59,88%</td>
+<td class="r b Data">      82,43%</td>
+<td class="r b Data">      85,22%</td>
+<td class="r b Data">      95,90%</td>
+<td class="r b Data">      98,71%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1975</th>
+<td class="r b Data">      24,41%</td>
+<td class="r b Data">      39,47%</td>
+<td class="r b Data">      59,96%</td>
+<td class="r b Data">      82,54%</td>
+<td class="r b Data">      84,84%</td>
+<td class="r b Data">      96,11%</td>
+<td class="r b Data">      98,78%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1976</th>
+<td class="r b Data">      24,33%</td>
+<td class="r b Data">      39,55%</td>
+<td class="r b Data">      60,42%</td>
+<td class="r b Data">      82,48%</td>
+<td class="r b Data">      84,52%</td>
+<td class="r b Data">      95,98%</td>
+<td class="r b Data">      98,62%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1977</th>
+<td class="r b Data">      24,25%</td>
+<td class="r b Data">      39,08%</td>
+<td class="r b Data">      59,87%</td>
+<td class="r b Data">      82,10%</td>
+<td class="r b Data">      84,91%</td>
+<td class="r b Data">      96,01%</td>
+<td class="r b Data">      98,77%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1978</th>
+<td class="r b Data">      24,53%</td>
+<td class="r b Data">      38,97%</td>
+<td class="r b Data">      59,71%</td>
+<td class="r b Data">      83,00%</td>
+<td class="r b Data">      84,88%</td>
+<td class="r b Data">      95,97%</td>
+<td class="r b Data">      98,63%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1979</th>
+<td class="r b Data">      23,96%</td>
+<td class="r b Data">      39,14%</td>
+<td class="r b Data">      60,01%</td>
+<td class="r b Data">      82,08%</td>
+<td class="r b Data">      85,00%</td>
+<td class="r b Data">      96,02%</td>
+<td class="r b Data">      98,61%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1980</th>
+<td class="r b Data">      24,20%</td>
+<td class="r b Data">      39,33%</td>
+<td class="r b Data">      59,38%</td>
+<td class="r b Data">      82,00%</td>
+<td class="r b Data">      84,80%</td>
+<td class="r b Data">      95,95%</td>
+<td class="r b Data">      98,65%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1981</th>
+<td class="r b Data">      23,14%</td>
+<td class="r b Data">      38,43%</td>
+<td class="r b Data">      59,28%</td>
+<td class="r b Data">      82,51%</td>
+<td class="r b Data">      84,73%</td>
+<td class="r b Data">      95,82%</td>
+<td class="r b Data">      98,73%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1982</th>
+<td class="r b Data">      22,65%</td>
+<td class="r b Data">      37,43%</td>
+<td class="r b Data">      58,22%</td>
+<td class="r b Data">      81,77%</td>
+<td class="r b Data">      84,45%</td>
+<td class="r b Data">      95,72%</td>
+<td class="r b Data">      98,56%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1983</th>
+<td class="r b Data">      22,40%</td>
+<td class="r b Data">      37,14%</td>
+<td class="r b Data">      58,25%</td>
+<td class="r b Data">      81,62%</td>
+<td class="r b Data">      84,55%</td>
+<td class="r b Data">      95,87%</td>
+<td class="r b Data">      98,73%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1984</th>
+<td class="r b Data">      22,04%</td>
+<td class="r b Data">      36,29%</td>
+<td class="r b Data">      57,23%</td>
+<td class="r b Data">      81,32%</td>
+<td class="r b Data">      83,98%</td>
+<td class="r b Data">      95,80%</td>
+<td class="r b Data">      98,63%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1985</th>
+<td class="r b Data">      21,25%</td>
+<td class="r b Data">      35,73%</td>
+<td class="r b Data">      57,37%</td>
+<td class="r b Data">      80,79%</td>
+<td class="r b Data">      83,27%</td>
+<td class="r b Data">      95,65%</td>
+<td class="r b Data">      98,48%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1986</th>
+<td class="r b Data">      20,49%</td>
+<td class="r b Data">      34,63%</td>
+<td class="r b Data">      56,67%</td>
+<td class="r b Data">      81,19%</td>
+<td class="r b Data">      83,64%</td>
+<td class="r b Data">      95,57%</td>
+<td class="r b Data">      98,64%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1987</th>
+<td class="r b Data">      19,69%</td>
+<td class="r b Data">      34,71%</td>
+<td class="r b Data">      56,26%</td>
+<td class="r b Data">      80,97%</td>
+<td class="r b Data">      83,75%</td>
+<td class="r b Data">      95,52%</td>
+<td class="r b Data">      98,40%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1988</th>
+<td class="r b Data">      19,21%</td>
+<td class="r b Data">      33,56%</td>
+<td class="r b Data">      55,79%</td>
+<td class="r b Data">      80,51%</td>
+<td class="r b Data">      83,19%</td>
+<td class="r b Data">      95,54%</td>
+<td class="r b Data">      98,31%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1989</th>
+<td class="r b Data">      18,59%</td>
+<td class="r b Data">      32,79%</td>
+<td class="r b Data">      55,13%</td>
+<td class="r b Data">      80,31%</td>
+<td class="r b Data">      83,10%</td>
+<td class="r b Data">      95,60%</td>
+<td class="r b Data">      98,38%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1990</th>
+<td class="r b Data">      18,27%</td>
+<td class="r b Data">      32,75%</td>
+<td class="r b Data">      54,57%</td>
+<td class="r b Data">      80,05%</td>
+<td class="r b Data">      82,74%</td>
+<td class="r b Data">      95,61%</td>
+<td class="r b Data">      98,29%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1991</th>
+<td class="r b Data">      17,75%</td>
+<td class="r b Data">      32,48%</td>
+<td class="r b Data">      54,66%</td>
+<td class="r b Data">      79,95%</td>
+<td class="r b Data">      82,95%</td>
+<td class="r b Data">      95,52%</td>
+<td class="r b Data">      98,31%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1992</th>
+<td class="r b Data">      17,60%</td>
+<td class="r b Data">      32,08%</td>
+<td class="r b Data">      54,51%</td>
+<td class="r b Data">      79,96%</td>
+<td class="r b Data">      82,90%</td>
+<td class="r b Data">      95,55%</td>
+<td class="r b Data">      98,34%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1993</th>
+<td class="r b Data">      17,63%</td>
+<td class="r b Data">      32,36%</td>
+<td class="r b Data">      54,57%</td>
+<td class="r b Data">      79,87%</td>
+<td class="r b Data">      82,89%</td>
+<td class="r b Data">      95,49%</td>
+<td class="r b Data">      98,39%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1994</th>
+<td class="r b Data">      17,59%</td>
+<td class="r b Data">      32,30%</td>
+<td class="r b Data">      54,57%</td>
+<td class="r b Data">      79,99%</td>
+<td class="r b Data">      82,83%</td>
+<td class="r b Data">      95,40%</td>
+<td class="r b Data">      98,45%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1995</th>
+<td class="r b Data">      17,93%</td>
+<td class="r b Data">      32,27%</td>
+<td class="r b Data">      54,88%</td>
+<td class="r b Data">      80,22%</td>
+<td class="r b Data">      82,97%</td>
+<td class="r b Data">      95,45%</td>
+<td class="r b Data">      98,46%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1996</th>
+<td class="r b Data">      18,32%</td>
+<td class="r b Data">      32,68%</td>
+<td class="r b Data">      54,86%</td>
+<td class="r b Data">      80,34%</td>
+<td class="r b Data">      82,53%</td>
+<td class="r b Data">      95,64%</td>
+<td class="r b Data">      98,48%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1997</th>
+<td class="r b Data">      18,78%</td>
+<td class="r b Data">      33,15%</td>
+<td class="r b Data">      55,63%</td>
+<td class="r b Data">      80,16%</td>
+<td class="r b Data">      83,00%</td>
+<td class="r b Data">      95,47%</td>
+<td class="r b Data">      98,45%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1998</th>
+<td class="r b Data">      19,74%</td>
+<td class="r b Data">      33,77%</td>
+<td class="r b Data">      55,93%</td>
+<td class="r b Data">      80,71%</td>
+<td class="r b Data">      83,26%</td>
+<td class="r b Data">      95,68%</td>
+<td class="r b Data">      98,49%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1999</th>
+<td class="r b Data">      20,40%</td>
+<td class="r b Data">      34,29%</td>
+<td class="r b Data">      56,42%</td>
+<td class="r b Data">      80,52%</td>
+<td class="r b Data">      83,36%</td>
+<td class="r b Data">      95,84%</td>
+<td class="r b Data">      98,44%</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">2000</th>
+<td class="r b Data">      21,18%</td>
+<td class="r b Data">      35,22%</td>
+<td class="r b Data">      56,60%</td>
+<td class="r b Data">      80,85%</td>
+<td class="r b Data">      84,00%</td>
+<td class="r b Data">      95,94%</td>
+<td class="r b Data">      98,44%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
