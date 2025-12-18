@@ -153,13 +153,13 @@ max(days due)= &naz._days &naz._due;
 where &war;
 run;
 proc transpose data=abt_maxy prefix=&naz._days_
-out=abt_&naz._days(drop=_name_ _lebel_);
+out=abt_&naz._days(drop=_name_ _label_);
 var &naz._days;
 id period;
 by cid;
 run;
 proc transpose data=abt_maxy prefix=&naz._due_
-out=abt_&naz._due(drop=_name_ _lebel_);
+out=abt_&naz._due(drop=_name_ _label_);
 var &naz._due;
 id period;
 by cid;
