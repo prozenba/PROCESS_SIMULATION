@@ -153,13 +153,13 @@ max(days due)= &naz._days &naz._due;
 where &war;
 run;
 proc transpose data=abt_maxy prefix=&naz._days_
-out=abt_&naz._days(drop=_name_ _label_);
+out=abt_&naz._days(drop=_name_ );
 var &naz._days;
 id period;
 by cid;
 run;
 proc transpose data=abt_maxy prefix=&naz._due_
-out=abt_&naz._due(drop=_name_ _label_);
+out=abt_&naz._due(drop=_name_ );
 var &naz._due;
 id period;
 by cid;
@@ -418,7 +418,7 @@ run;
 proc sort data=res nodupkey;
 by cid period;
 run;
-proc transpose data=res out=response(drop=_name_ _label_) prefix=res_;
+proc transpose data=res out=response(drop=_name_ ) prefix=res_;
 by cid;
 id period;
 var aid;
@@ -685,3 +685,4 @@ ods listing;
 
 %make_reports(1975,1987);
 /*%make_reports(1988,1998);*/
+
