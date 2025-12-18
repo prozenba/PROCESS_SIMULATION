@@ -4,6 +4,9 @@
 /* (c) Karol Przanowski */
 /* kprzan@sgh.waw.pl */
   ;*';*";*/;run;quit;ods html5(id=vscode) close;
+%let START=%sysfunc(datetime(), datetime20.);
+%let STARTT=%sysfunc(time());
+
 
 options mprint;
 options nomprint;
@@ -697,3 +700,25 @@ ods listing;
 
 %make_reports(1975,1987);
 /*%make_reports(1988,1998);*/
+
+sasfile pot.default close;
+sasfile pot.Production close;
+sasfile pot.transactions close;
+
+
+sasfile data.decisions close;
+sasfile data.transactions close;
+
+%let END=%sysfunc(datetime(), datetime20.);
+%let ENDT=%sysfunc(time());
+
+%put &=START;
+%put &=END;
+
+%put &=STARTT;
+%put &=ENDT;
+
+
+%let runtime = %sysfunc(putn(%sysevalf(&ENDT-&STARTT), time10.));
+
+%put &=RunTime: 
