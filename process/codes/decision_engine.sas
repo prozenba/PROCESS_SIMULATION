@@ -10,7 +10,7 @@ set &wej;
 run;
 
 %let zbior=cal;
-%include "&dir.process\calibration\model_ins_risk\scoring_code.sas";
+%include "&dir.process/calibration/model_ins_risk/scoring_code.sas";
 
 data cal1;
 set cal_score;
@@ -21,7 +21,7 @@ drop psc: SCORECARD_POINTS;
 run;
 
 %let zbior=cal1;
-%include "&dir.process\calibration\model_css_risk\scoring_code.sas";
+%include "&dir.process/calibration/model_css_risk/scoring_code.sas";
 
 
 data cal2;
@@ -34,7 +34,7 @@ run;
 
 
 %let zbior=cal2;
-%include "&dir.process\calibration\model_cross_css_risk\scoring_code.sas";
+%include "&dir.process/calibration/model_cross_css_risk/scoring_code.sas";
 
 
 data cal3;
@@ -46,7 +46,7 @@ run;
 
 
 %let zbior=cal3;
-%include "&dir.process\calibration\model_response\scoring_code.sas";
+%include "&dir.process/calibration/model_response/scoring_code.sas";
 
 
 data cal4;
@@ -117,3 +117,4 @@ app_n_installments pd cross_pd pr;
 format pd cross_pd pr nlpct12.2;
 run;
 %mend;
+
