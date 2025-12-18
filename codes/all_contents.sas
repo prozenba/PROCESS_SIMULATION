@@ -3,18 +3,23 @@
 
 /* (c) Karol Przanowski */
 /* kprzan@sgh.waw.pl */
+  ;*';*";*/;run;quit;ods html5(id=vscode) close;
 
 options mprint;
 options nomprint;
 
-%let dir=c:\karol\oferta_zajec\sas_cs_en\project\;
+%let dir=&WORKSPACE_PATH./PROCESS_SIMULATION/;
 
-libname data "&dir.process\data\" compress=yes;
-libname abt "&dir.process\abt\" compress=yes;
-libname pot "&dir.potential" compress=yes;
+libname dataP parquet "&dir.process/data/" ;
+libname abtP parquet "&dir.process/abt/" ;
+libname pot parquet  "&dir.potential" ;
 
-%include "&dir.codes\abt_behavioral_columns.sas" / source2;
-%include "&dir.process\codes\decision_engine.sas" / source2;
+libname data  "&dir.process/data/" ;
+libname abt  "&dir.process/abt/" ;
+/* libname pot parquet  "&dir.potential" ; */
+
+%include "&dir.codes/abt_behavioral_columns.sas" / source2;
+%include "&dir.process/codes/decision_engine.sas" / source2;
 
 
 
@@ -182,7 +187,7 @@ create table cust_uni as
 select distinct cid from month_prod;
 quit;
 
-/*czy klient z nowej produkcji css by³ aktywny*/
+/*czy klient z nowej produkcji css byï¿½ aktywny*/
 proc sql;
 create table cust_uni_active as
 select distinct cid, 1 as act_cus_active 
@@ -190,7 +195,7 @@ label="Customer had active (status=A) loans one month before"
 from data.transactions where period="&proc_period1"
 and status='A';
 quit;
-/*czy klient z nowej produkcji css by³ aktywny*/
+/*czy klient z nowej produkcji css byï¿½ aktywny*/
 
 
 %cust_level(ins);
@@ -347,7 +352,7 @@ quit;
 
 %let proc_period=%scan(&prod_periods,1,#);
 %put proc_period;
-/*pierwszy period wyj¹tkowo zawsze ca³y akceptowany*/
+/*pierwszy period wyjï¿½tkowo zawsze caï¿½y akceptowany*/
 proc sql;
 create table month_prod as
 select aid from pot.Production where period="&proc_period";
@@ -363,7 +368,7 @@ select * from pot.transactions where fin_period="&proc_period";
 quit;
 proc append base=data.transactions data=month_trans;
 run;
-/*pierwszy period wyj¹tkowo zawsze ca³y akceptowany*/
+/*pierwszy period wyjï¿½tkowo zawsze caï¿½y akceptowany*/
 
 
 /*%do n_month=2 %to 3;*/
@@ -614,7 +619,7 @@ run;
 
 
 ods listing close;
-ods html path="&dir.process\reports\" (url=none)
+ods html path="&dir.process/reports/" (url=none)
 body="profit_&years._&yeare..html" style=statistical;
 
 title "Production and risk";
