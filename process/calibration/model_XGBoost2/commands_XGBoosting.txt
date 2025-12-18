@@ -1,0 +1,19 @@
+##Virtual Python environment, based on simple Python installation file
+
+##install Python, run python-3.9.7-amd64.exe into c:\karol\python\
+## run CMD in Windows box
+c:
+cd c:\karol\python\
+c:\karol\python\Python39\python -m venv c:\karol\python\venvXGB
+c:\karol\python\venvXGB\Scripts\activate.bat
+
+c:\karol\python\venv\Scripts\python.exe -m pip install --upgrade pip==24.3.1
+pip install -r c:\karol\python\requirementsXGB.txt
+
+
+#you can choose lab or notebook
+jupyter-lab
+jupyter notebook
+
+## to run in any browser
+jupyter-lab --no-browser

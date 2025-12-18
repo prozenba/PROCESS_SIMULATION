@@ -1,0 +1,3152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1250">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #D8DBD3;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #D8DBD3;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #D8DBD3;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #D8DBD3;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #D8DBD3;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #D8DBD3;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #D8DBD3;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #D8DBD3;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #D8DBD3;
+  border: 1pt solid #000000;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #D8DBD3;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #D8DBD3;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #D8DBD3;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #F5F7F1;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #D8DBD3;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #D8DBD3;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #D8DBD3;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Production and risk</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="3" scope="col">Year</th>
+<th class="c header" colspan="8" scope="colgroup">N</th>
+<th class="c header" colspan="8" scope="colgroup">Pct</th>
+<th class="c header" colspan="8" scope="colgroup">Amount</th>
+<th class="c header" colspan="8" scope="colgroup">Risk</th>
+</tr>
+<tr>
+<th class="c header" colspan="3" scope="colgroup">css</th>
+<th class="c header" colspan="2" scope="colgroup">ins</th>
+<th class="c header" colspan="3" scope="colgroup">All</th>
+<th class="c header" colspan="3" scope="colgroup">css</th>
+<th class="c header" colspan="2" scope="colgroup">ins</th>
+<th class="c header" colspan="3" scope="colgroup">All</th>
+<th class="c header" colspan="3" scope="colgroup">css</th>
+<th class="c header" colspan="2" scope="colgroup">ins</th>
+<th class="c header" colspan="3" scope="colgroup">All</th>
+<th class="c header" colspan="3" scope="colgroup">css</th>
+<th class="c header" colspan="2" scope="colgroup">ins</th>
+<th class="c header" colspan="3" scope="colgroup">All</th>
+</tr>
+<tr>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">1975</th>
+<td class="r b data">           301</td>
+<td class="r b data">         1 578</td>
+<td class="r b data">            98</td>
+<td class="r b data">           367</td>
+<td class="r b data">         1 456</td>
+<td class="r b data">           668</td>
+<td class="r b data">         3 034</td>
+<td class="r b data">            98</td>
+<td class="r b data">            15,23%</td>
+<td class="r b data">            79,82%</td>
+<td class="r b data">             4,96%</td>
+<td class="r b data">            20,13%</td>
+<td class="r b data">            79,87%</td>
+<td class="r b data">            17,58%</td>
+<td class="r b data">            79,84%</td>
+<td class="r b data">             2,58%</td>
+<td class="r b data">     1 505 000</td>
+<td class="r b data">     7 890 000</td>
+<td class="r b data">       490 000</td>
+<td class="r b data">     1 342 032</td>
+<td class="r b data">     7 490 172</td>
+<td class="r b data">     2 847 032</td>
+<td class="r b data">    15 380 172</td>
+<td class="r b data">       490 000</td>
+<td class="r b data">      16,61%</td>
+<td class="r b data">      73,07%</td>
+<td class="r b data">      46,94%</td>
+<td class="r b data">       1,36%</td>
+<td class="r b data">      23,83%</td>
+<td class="r b data">       8,23%</td>
+<td class="r b data">      49,44%</td>
+<td class="r b data">      46,94%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1976</th>
+<td class="r b data">           365</td>
+<td class="r b data">         1 039</td>
+<td class="r b data">           617</td>
+<td class="r b data">           449</td>
+<td class="r b data">         1 367</td>
+<td class="r b data">           814</td>
+<td class="r b data">         2 406</td>
+<td class="r b data">           617</td>
+<td class="r b data">            18,06%</td>
+<td class="r b data">            51,41%</td>
+<td class="r b data">            30,53%</td>
+<td class="r b data">            24,72%</td>
+<td class="r b data">            75,28%</td>
+<td class="r b data">            21,21%</td>
+<td class="r b data">            62,71%</td>
+<td class="r b data">            16,08%</td>
+<td class="r b data">     1 825 000</td>
+<td class="r b data">     5 195 000</td>
+<td class="r b data">     3 085 000</td>
+<td class="r b data">     1 600 992</td>
+<td class="r b data">     7 444 176</td>
+<td class="r b data">     3 425 992</td>
+<td class="r b data">    12 639 176</td>
+<td class="r b data">     3 085 000</td>
+<td class="r b data">      22,74%</td>
+<td class="r b data">      72,86%</td>
+<td class="r b data">      65,64%</td>
+<td class="r b data">       4,01%</td>
+<td class="r b data">      21,80%</td>
+<td class="r b data">      12,41%</td>
+<td class="r b data">      43,85%</td>
+<td class="r b data">      65,64%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1977</th>
+<td class="r b data">           352</td>
+<td class="r b data">           642</td>
+<td class="r b data">         1 055</td>
+<td class="r b data">           474</td>
+<td class="r b data">         1 367</td>
+<td class="r b data">           826</td>
+<td class="r b data">         2 009</td>
+<td class="r b data">         1 055</td>
+<td class="r b data">            17,18%</td>
+<td class="r b data">            31,33%</td>
+<td class="r b data">            51,49%</td>
+<td class="r b data">            25,75%</td>
+<td class="r b data">            74,25%</td>
+<td class="r b data">            21,23%</td>
+<td class="r b data">            51,65%</td>
+<td class="r b data">            27,12%</td>
+<td class="r b data">     1 760 000</td>
+<td class="r b data">     3 210 000</td>
+<td class="r b data">     5 275 000</td>
+<td class="r b data">     1 752 972</td>
+<td class="r b data">     7 215 432</td>
+<td class="r b data">     3 512 972</td>
+<td class="r b data">    10 425 432</td>
+<td class="r b data">     5 275 000</td>
+<td class="r b data">      19,03%</td>
+<td class="r b data">      73,21%</td>
+<td class="r b data">      71,00%</td>
+<td class="r b data">       3,38%</td>
+<td class="r b data">      21,43%</td>
+<td class="r b data">      10,05%</td>
+<td class="r b data">      37,98%</td>
+<td class="r b data">      71,00%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1978</th>
+<td class="r b data">           351</td>
+<td class="r b data">           562</td>
+<td class="r b data">         1 140</td>
+<td class="r b data">           453</td>
+<td class="r b data">         1 383</td>
+<td class="r b data">           804</td>
+<td class="r b data">         1 945</td>
+<td class="r b data">         1 140</td>
+<td class="r b data">            17,10%</td>
+<td class="r b data">            27,37%</td>
+<td class="r b data">            55,53%</td>
+<td class="r b data">            24,67%</td>
+<td class="r b data">            75,33%</td>
+<td class="r b data">            20,67%</td>
+<td class="r b data">            50,01%</td>
+<td class="r b data">            29,31%</td>
+<td class="r b data">     1 755 000</td>
+<td class="r b data">     2 810 000</td>
+<td class="r b data">     5 700 000</td>
+<td class="r b data">     1 639 104</td>
+<td class="r b data">     7 365 612</td>
+<td class="r b data">     3 394 104</td>
+<td class="r b data">    10 175 612</td>
+<td class="r b data">     5 700 000</td>
+<td class="r b data">      22,79%</td>
+<td class="r b data">      75,27%</td>
+<td class="r b data">      69,39%</td>
+<td class="r b data">       1,77%</td>
+<td class="r b data">      19,38%</td>
+<td class="r b data">      10,95%</td>
+<td class="r b data">      35,53%</td>
+<td class="r b data">      69,39%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1979</th>
+<td class="r b data">           335</td>
+<td class="r b data">           539</td>
+<td class="r b data">         1 146</td>
+<td class="r b data">           449</td>
+<td class="r b data">         1 357</td>
+<td class="r b data">           784</td>
+<td class="r b data">         1 896</td>
+<td class="r b data">         1 146</td>
+<td class="r b data">            16,58%</td>
+<td class="r b data">            26,68%</td>
+<td class="r b data">            56,73%</td>
+<td class="r b data">            24,86%</td>
+<td class="r b data">            75,14%</td>
+<td class="r b data">            20,49%</td>
+<td class="r b data">            49,56%</td>
+<td class="r b data">            29,95%</td>
+<td class="r b data">     1 675 000</td>
+<td class="r b data">     2 695 000</td>
+<td class="r b data">     5 730 000</td>
+<td class="r b data">     1 589 664</td>
+<td class="r b data">     7 499 820</td>
+<td class="r b data">     3 264 664</td>
+<td class="r b data">    10 194 820</td>
+<td class="r b data">     5 730 000</td>
+<td class="r b data">      20,30%</td>
+<td class="r b data">      71,24%</td>
+<td class="r b data">      68,67%</td>
+<td class="r b data">       3,34%</td>
+<td class="r b data">      17,02%</td>
+<td class="r b data">      10,59%</td>
+<td class="r b data">      32,44%</td>
+<td class="r b data">      68,67%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1980</th>
+<td class="r b data">           314</td>
+<td class="r b data">           536</td>
+<td class="r b data">         1 151</td>
+<td class="r b data">           479</td>
+<td class="r b data">         1 305</td>
+<td class="r b data">           793</td>
+<td class="r b data">         1 841</td>
+<td class="r b data">         1 151</td>
+<td class="r b data">            15,69%</td>
+<td class="r b data">            26,79%</td>
+<td class="r b data">            57,52%</td>
+<td class="r b data">            26,85%</td>
+<td class="r b data">            73,15%</td>
+<td class="r b data">            20,95%</td>
+<td class="r b data">            48,64%</td>
+<td class="r b data">            30,41%</td>
+<td class="r b data">     1 570 000</td>
+<td class="r b data">     2 680 000</td>
+<td class="r b data">     5 755 000</td>
+<td class="r b data">     1 796 232</td>
+<td class="r b data">     6 972 576</td>
+<td class="r b data">     3 366 232</td>
+<td class="r b data">     9 652 576</td>
+<td class="r b data">     5 755 000</td>
+<td class="r b data">      20,06%</td>
+<td class="r b data">      71,83%</td>
+<td class="r b data">      70,03%</td>
+<td class="r b data">       1,88%</td>
+<td class="r b data">      18,01%</td>
+<td class="r b data">       9,08%</td>
+<td class="r b data">      33,68%</td>
+<td class="r b data">      70,03%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1981</th>
+<td class="r b data">           363</td>
+<td class="r b data">           494</td>
+<td class="r b data">         1 111</td>
+<td class="r b data">           494</td>
+<td class="r b data">         1 347</td>
+<td class="r b data">           857</td>
+<td class="r b data">         1 841</td>
+<td class="r b data">         1 111</td>
+<td class="r b data">            18,45%</td>
+<td class="r b data">            25,10%</td>
+<td class="r b data">            56,45%</td>
+<td class="r b data">            26,83%</td>
+<td class="r b data">            73,17%</td>
+<td class="r b data">            22,50%</td>
+<td class="r b data">            48,33%</td>
+<td class="r b data">            29,17%</td>
+<td class="r b data">     1 815 000</td>
+<td class="r b data">     2 470 000</td>
+<td class="r b data">     5 555 000</td>
+<td class="r b data">     1 669 176</td>
+<td class="r b data">     6 948 348</td>
+<td class="r b data">     3 484 176</td>
+<td class="r b data">     9 418 348</td>
+<td class="r b data">     5 555 000</td>
+<td class="r b data">      23,97%</td>
+<td class="r b data">      73,28%</td>
+<td class="r b data">      67,15%</td>
+<td class="r b data">       2,23%</td>
+<td class="r b data">      15,00%</td>
+<td class="r b data">      11,44%</td>
+<td class="r b data">      30,64%</td>
+<td class="r b data">      67,15%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1982</th>
+<td class="r b data">           349</td>
+<td class="r b data">           490</td>
+<td class="r b data">         1 083</td>
+<td class="r b data">           501</td>
+<td class="r b data">         1 312</td>
+<td class="r b data">           850</td>
+<td class="r b data">         1 802</td>
+<td class="r b data">         1 083</td>
+<td class="r b data">            18,16%</td>
+<td class="r b data">            25,49%</td>
+<td class="r b data">            56,35%</td>
+<td class="r b data">            27,63%</td>
+<td class="r b data">            72,37%</td>
+<td class="r b data">            22,76%</td>
+<td class="r b data">            48,25%</td>
+<td class="r b data">            29,00%</td>
+<td class="r b data">     1 745 000</td>
+<td class="r b data">     2 450 000</td>
+<td class="r b data">     5 415 000</td>
+<td class="r b data">     1 846 104</td>
+<td class="r b data">     6 877 464</td>
+<td class="r b data">     3 591 104</td>
+<td class="r b data">     9 327 464</td>
+<td class="r b data">     5 415 000</td>
+<td class="r b data">      20,06%</td>
+<td class="r b data">      74,90%</td>
+<td class="r b data">      65,10%</td>
+<td class="r b data">       2,00%</td>
+<td class="r b data">      15,93%</td>
+<td class="r b data">       9,41%</td>
+<td class="r b data">      31,96%</td>
+<td class="r b data">      65,10%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1983</th>
+<td class="r b data">           400</td>
+<td class="r b data">           466</td>
+<td class="r b data">         1 042</td>
+<td class="r b data">           504</td>
+<td class="r b data">         1 349</td>
+<td class="r b data">           904</td>
+<td class="r b data">         1 815</td>
+<td class="r b data">         1 042</td>
+<td class="r b data">            20,96%</td>
+<td class="r b data">            24,42%</td>
+<td class="r b data">            54,61%</td>
+<td class="r b data">            27,20%</td>
+<td class="r b data">            72,80%</td>
+<td class="r b data">            24,04%</td>
+<td class="r b data">            48,26%</td>
+<td class="r b data">            27,71%</td>
+<td class="r b data">     2 000 000</td>
+<td class="r b data">     2 330 000</td>
+<td class="r b data">     5 210 000</td>
+<td class="r b data">     1 980 132</td>
+<td class="r b data">     7 194 132</td>
+<td class="r b data">     3 980 132</td>
+<td class="r b data">     9 524 132</td>
+<td class="r b data">     5 210 000</td>
+<td class="r b data">      16,50%</td>
+<td class="r b data">      72,53%</td>
+<td class="r b data">      67,08%</td>
+<td class="r b data">       0,99%</td>
+<td class="r b data">      13,71%</td>
+<td class="r b data">       7,85%</td>
+<td class="r b data">      28,82%</td>
+<td class="r b data">      67,08%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1984</th>
+<td class="r b data">           395</td>
+<td class="r b data">           481</td>
+<td class="r b data">         1 038</td>
+<td class="r b data">           497</td>
+<td class="r b data">         1 320</td>
+<td class="r b data">           892</td>
+<td class="r b data">         1 801</td>
+<td class="r b data">         1 038</td>
+<td class="r b data">            20,64%</td>
+<td class="r b data">            25,13%</td>
+<td class="r b data">            54,23%</td>
+<td class="r b data">            27,35%</td>
+<td class="r b data">            72,65%</td>
+<td class="r b data">            23,91%</td>
+<td class="r b data">            48,27%</td>
+<td class="r b data">            27,82%</td>
+<td class="r b data">     1 975 000</td>
+<td class="r b data">     2 405 000</td>
+<td class="r b data">     5 190 000</td>
+<td class="r b data">     1 807 440</td>
+<td class="r b data">     7 095 372</td>
+<td class="r b data">     3 782 440</td>
+<td class="r b data">     9 500 372</td>
+<td class="r b data">     5 190 000</td>
+<td class="r b data">      18,48%</td>
+<td class="r b data">      73,80%</td>
+<td class="r b data">      63,78%</td>
+<td class="r b data">       1,61%</td>
+<td class="r b data">      12,50%</td>
+<td class="r b data">       9,08%</td>
+<td class="r b data">      28,87%</td>
+<td class="r b data">      63,78%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1985</th>
+<td class="r b data">           406</td>
+<td class="r b data">           540</td>
+<td class="r b data">           961</td>
+<td class="r b data">           506</td>
+<td class="r b data">         1 266</td>
+<td class="r b data">           912</td>
+<td class="r b data">         1 806</td>
+<td class="r b data">           961</td>
+<td class="r b data">            21,29%</td>
+<td class="r b data">            28,32%</td>
+<td class="r b data">            50,39%</td>
+<td class="r b data">            28,56%</td>
+<td class="r b data">            71,44%</td>
+<td class="r b data">            24,79%</td>
+<td class="r b data">            49,09%</td>
+<td class="r b data">            26,12%</td>
+<td class="r b data">     2 030 000</td>
+<td class="r b data">     2 700 000</td>
+<td class="r b data">     4 805 000</td>
+<td class="r b data">     1 916 640</td>
+<td class="r b data">     6 541 308</td>
+<td class="r b data">     3 946 640</td>
+<td class="r b data">     9 241 308</td>
+<td class="r b data">     4 805 000</td>
+<td class="r b data">      20,44%</td>
+<td class="r b data">      73,52%</td>
+<td class="r b data">      60,15%</td>
+<td class="r b data">       1,98%</td>
+<td class="r b data">      12,32%</td>
+<td class="r b data">      10,20%</td>
+<td class="r b data">      30,62%</td>
+<td class="r b data">      60,15%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1986</th>
+<td class="r b data">           382</td>
+<td class="r b data">           511</td>
+<td class="r b data">         1 012</td>
+<td class="r b data">           509</td>
+<td class="r b data">         1 310</td>
+<td class="r b data">           891</td>
+<td class="r b data">         1 821</td>
+<td class="r b data">         1 012</td>
+<td class="r b data">            20,05%</td>
+<td class="r b data">            26,82%</td>
+<td class="r b data">            53,12%</td>
+<td class="r b data">            27,98%</td>
+<td class="r b data">            72,02%</td>
+<td class="r b data">            23,93%</td>
+<td class="r b data">            48,90%</td>
+<td class="r b data">            27,18%</td>
+<td class="r b data">     1 910 000</td>
+<td class="r b data">     2 555 000</td>
+<td class="r b data">     5 060 000</td>
+<td class="r b data">     1 818 768</td>
+<td class="r b data">     6 557 928</td>
+<td class="r b data">     3 728 768</td>
+<td class="r b data">     9 112 928</td>
+<td class="r b data">     5 060 000</td>
+<td class="r b data">      18,32%</td>
+<td class="r b data">      71,82%</td>
+<td class="r b data">      60,67%</td>
+<td class="r b data">       2,16%</td>
+<td class="r b data">      12,98%</td>
+<td class="r b data">       9,09%</td>
+<td class="r b data">      29,49%</td>
+<td class="r b data">      60,67%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1987</th>
+<td class="r b data">           412</td>
+<td class="r b data">           463</td>
+<td class="r b data">         1 067</td>
+<td class="r b data">           539</td>
+<td class="r b data">         1 277</td>
+<td class="r b data">           951</td>
+<td class="r b data">         1 740</td>
+<td class="r b data">         1 067</td>
+<td class="r b data">            21,22%</td>
+<td class="r b data">            23,84%</td>
+<td class="r b data">            54,94%</td>
+<td class="r b data">            29,68%</td>
+<td class="r b data">            70,32%</td>
+<td class="r b data">            25,31%</td>
+<td class="r b data">            46,30%</td>
+<td class="r b data">            28,39%</td>
+<td class="r b data">     2 060 000</td>
+<td class="r b data">     2 315 000</td>
+<td class="r b data">     5 335 000</td>
+<td class="r b data">     1 942 236</td>
+<td class="r b data">     6 349 224</td>
+<td class="r b data">     4 002 236</td>
+<td class="r b data">     8 664 224</td>
+<td class="r b data">     5 335 000</td>
+<td class="r b data">      17,96%</td>
+<td class="r b data">      68,03%</td>
+<td class="r b data">      59,70%</td>
+<td class="r b data">       1,67%</td>
+<td class="r b data">      14,02%</td>
+<td class="r b data">       8,73%</td>
+<td class="r b data">      28,39%</td>
+<td class="r b data">      59,70%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">All</th>
+<td class="r b data">         4 725</td>
+<td class="r b data">         8 341</td>
+<td class="r b data">        12 521</td>
+<td class="r b data">         6 221</td>
+<td class="r b data">        17 416</td>
+<td class="r b data">        10 946</td>
+<td class="r b data">        25 757</td>
+<td class="r b data">        12 521</td>
+<td class="r b data">            18,47%</td>
+<td class="r b data">            32,60%</td>
+<td class="r b data">            48,94%</td>
+<td class="r b data">            26,32%</td>
+<td class="r b data">            73,68%</td>
+<td class="r b data">            22,24%</td>
+<td class="r b data">            52,33%</td>
+<td class="r b data">            25,44%</td>
+<td class="r b data">    23 625 000</td>
+<td class="r b data">    41 705 000</td>
+<td class="r b data">    62 605 000</td>
+<td class="r b data">    22 701 492</td>
+<td class="r b data">    91 551 564</td>
+<td class="r b data">    46 326 492</td>
+<td class="r b data">   133 256 564</td>
+<td class="r b data">    62 605 000</td>
+<td class="r b data">      19,77%</td>
+<td class="r b data">      72,81%</td>
+<td class="r b data">      65,69%</td>
+<td class="r b data">       2,17%</td>
+<td class="r b data">      16,87%</td>
+<td class="r b data">       9,77%</td>
+<td class="r b data">      34,98%</td>
+<td class="r b data">      65,69%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Profit, income and loss</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="3" scope="col">Year</th>
+<th class="c header" colspan="8" scope="colgroup">Profit</th>
+<th class="c header" colspan="8" scope="colgroup">Income</th>
+<th class="c header" colspan="8" scope="colgroup">Loss</th>
+</tr>
+<tr>
+<th class="c header" colspan="3" scope="colgroup">css</th>
+<th class="c header" colspan="2" scope="colgroup">ins</th>
+<th class="c header" colspan="3" scope="colgroup">All</th>
+<th class="c header" colspan="3" scope="colgroup">css</th>
+<th class="c header" colspan="2" scope="colgroup">ins</th>
+<th class="c header" colspan="3" scope="colgroup">All</th>
+<th class="c header" colspan="3" scope="colgroup">css</th>
+<th class="c header" colspan="2" scope="colgroup">ins</th>
+<th class="c header" colspan="3" scope="colgroup">All</th>
+</tr>
+<tr>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">1975</th>
+<td class="r b data">       111 214</td>
+<td class="r b data" nowrap>    -2 749 621</td>
+<td class="r b data" nowrap>       -74 974</td>
+<td class="r b data">         1 254</td>
+<td class="r b data" nowrap>      -919 115</td>
+<td class="r b data">       112 468</td>
+<td class="r b data" nowrap>    -3 668 736</td>
+<td class="r b data" nowrap>       -74 974</td>
+<td class="r b data">       248 714</td>
+<td class="r b data">       421 129</td>
+<td class="r b data">        51 526</td>
+<td class="r b data">        12 567</td>
+<td class="r b data">        53 333</td>
+<td class="r b data">       261 281</td>
+<td class="r b data">       474 462</td>
+<td class="r b data">        51 526</td>
+<td class="r b data">       137 500</td>
+<td class="r b data">     3 170 750</td>
+<td class="r b data">       126 500</td>
+<td class="r b data">        11 313</td>
+<td class="r b data">       972 448</td>
+<td class="r b data">       148 813</td>
+<td class="r b data">     4 143 198</td>
+<td class="r b data">       126 500</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1976</th>
+<td class="r b data">        51 182</td>
+<td class="r b data" nowrap>    -1 802 318</td>
+<td class="r b data" nowrap>      -903 681</td>
+<td class="r b data" nowrap>        -7 353</td>
+<td class="r b data" nowrap>      -893 823</td>
+<td class="r b data">        43 829</td>
+<td class="r b data" nowrap>    -2 696 141</td>
+<td class="r b data" nowrap>      -903 681</td>
+<td class="r b data">       279 432</td>
+<td class="r b data">       279 432</td>
+<td class="r b data">       210 069</td>
+<td class="r b data">        14 657</td>
+<td class="r b data">        55 740</td>
+<td class="r b data">       294 089</td>
+<td class="r b data">       335 172</td>
+<td class="r b data">       210 069</td>
+<td class="r b data">       228 250</td>
+<td class="r b data">     2 081 750</td>
+<td class="r b data">     1 113 750</td>
+<td class="r b data">        22 010</td>
+<td class="r b data">       949 563</td>
+<td class="r b data">       250 260</td>
+<td class="r b data">     3 031 313</td>
+<td class="r b data">     1 113 750</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1977</th>
+<td class="r b data">        98 154</td>
+<td class="r b data" nowrap>    -1 122 067</td>
+<td class="r b data" nowrap>    -1 756 537</td>
+<td class="r b data" nowrap>       -14 100</td>
+<td class="r b data" nowrap>      -849 923</td>
+<td class="r b data">        84 054</td>
+<td class="r b data" nowrap>    -1 971 989</td>
+<td class="r b data" nowrap>    -1 756 537</td>
+<td class="r b data">       282 404</td>
+<td class="r b data">       170 433</td>
+<td class="r b data">       303 213</td>
+<td class="r b data">        16 529</td>
+<td class="r b data">        52 671</td>
+<td class="r b data">       298 933</td>
+<td class="r b data">       223 104</td>
+<td class="r b data">       303 213</td>
+<td class="r b data">       184 250</td>
+<td class="r b data">     1 292 500</td>
+<td class="r b data">     2 059 750</td>
+<td class="r b data">        30 629</td>
+<td class="r b data">       902 594</td>
+<td class="r b data">       214 879</td>
+<td class="r b data">     2 195 094</td>
+<td class="r b data">     2 059 750</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1978</th>
+<td class="r b data">        48 532</td>
+<td class="r b data" nowrap>    -1 025 516</td>
+<td class="r b data" nowrap>    -1 829 429</td>
+<td class="r b data">         5 700</td>
+<td class="r b data" nowrap>      -718 488</td>
+<td class="r b data">        54 232</td>
+<td class="r b data" nowrap>    -1 744 004</td>
+<td class="r b data" nowrap>    -1 829 429</td>
+<td class="r b data">       268 532</td>
+<td class="r b data">       137 734</td>
+<td class="r b data">       345 821</td>
+<td class="r b data">        15 555</td>
+<td class="r b data">        58 318</td>
+<td class="r b data">       284 087</td>
+<td class="r b data">       196 052</td>
+<td class="r b data">       345 821</td>
+<td class="r b data">       220 000</td>
+<td class="r b data">     1 163 250</td>
+<td class="r b data">     2 175 250</td>
+<td class="r b data">         9 855</td>
+<td class="r b data">       776 806</td>
+<td class="r b data">       229 855</td>
+<td class="r b data">     1 940 056</td>
+<td class="r b data">     2 175 250</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1979</th>
+<td class="r b data">        77 568</td>
+<td class="r b data" nowrap>      -902 412</td>
+<td class="r b data" nowrap>    -1 808 520</td>
+<td class="r b data" nowrap>        -1 967</td>
+<td class="r b data" nowrap>      -639 812</td>
+<td class="r b data">        75 601</td>
+<td class="r b data" nowrap>    -1 542 223</td>
+<td class="r b data" nowrap>    -1 808 520</td>
+<td class="r b data">       264 568</td>
+<td class="r b data">       153 588</td>
+<td class="r b data">       355 730</td>
+<td class="r b data">        14 887</td>
+<td class="r b data">        62 858</td>
+<td class="r b data">       279 455</td>
+<td class="r b data">       216 446</td>
+<td class="r b data">       355 730</td>
+<td class="r b data">       187 000</td>
+<td class="r b data">     1 056 000</td>
+<td class="r b data">     2 164 250</td>
+<td class="r b data">        16 853</td>
+<td class="r b data">       702 670</td>
+<td class="r b data">       203 853</td>
+<td class="r b data">     1 758 670</td>
+<td class="r b data">     2 164 250</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1980</th>
+<td class="r b data">        75 464</td>
+<td class="r b data" nowrap>      -909 125</td>
+<td class="r b data" nowrap>    -1 874 642</td>
+<td class="r b data">         5 198</td>
+<td class="r b data" nowrap>      -636 720</td>
+<td class="r b data">        80 662</td>
+<td class="r b data" nowrap>    -1 545 846</td>
+<td class="r b data" nowrap>    -1 874 642</td>
+<td class="r b data">       248 714</td>
+<td class="r b data">       149 625</td>
+<td class="r b data">       341 858</td>
+<td class="r b data">        16 587</td>
+<td class="r b data">        57 714</td>
+<td class="r b data">       265 301</td>
+<td class="r b data">       207 339</td>
+<td class="r b data">       341 858</td>
+<td class="r b data">       173 250</td>
+<td class="r b data">     1 058 750</td>
+<td class="r b data">     2 216 500</td>
+<td class="r b data">        11 389</td>
+<td class="r b data">       694 435</td>
+<td class="r b data">       184 639</td>
+<td class="r b data">     1 753 185</td>
+<td class="r b data">     2 216 500</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1981</th>
+<td class="r b data">        34 236</td>
+<td class="r b data" nowrap>      -864 702</td>
+<td class="r b data" nowrap>    -1 689 824</td>
+<td class="r b data">           186</td>
+<td class="r b data" nowrap>      -511 350</td>
+<td class="r b data">        34 422</td>
+<td class="r b data" nowrap>    -1 376 052</td>
+<td class="r b data" nowrap>    -1 689 824</td>
+<td class="r b data">       273 486</td>
+<td class="r b data">       130 798</td>
+<td class="r b data">       361 676</td>
+<td class="r b data">        15 571</td>
+<td class="r b data">        58 280</td>
+<td class="r b data">       289 057</td>
+<td class="r b data">       189 078</td>
+<td class="r b data">       361 676</td>
+<td class="r b data">       239 250</td>
+<td class="r b data">       995 500</td>
+<td class="r b data">     2 051 500</td>
+<td class="r b data">        15 385</td>
+<td class="r b data">       569 630</td>
+<td class="r b data">       254 635</td>
+<td class="r b data">     1 565 130</td>
+<td class="r b data">     2 051 500</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1982</th>
+<td class="r b data">        83 959</td>
+<td class="r b data" nowrap>      -887 370</td>
+<td class="r b data" nowrap>    -1 564 193</td>
+<td class="r b data">         3 145</td>
+<td class="r b data" nowrap>      -551 125</td>
+<td class="r b data">        87 104</td>
+<td class="r b data" nowrap>    -1 438 495</td>
+<td class="r b data" nowrap>    -1 564 193</td>
+<td class="r b data">       276 459</td>
+<td class="r b data">       121 880</td>
+<td class="r b data">       374 557</td>
+<td class="r b data">        17 395</td>
+<td class="r b data">        57 363</td>
+<td class="r b data">       293 854</td>
+<td class="r b data">       179 243</td>
+<td class="r b data">       374 557</td>
+<td class="r b data">       192 500</td>
+<td class="r b data">     1 009 250</td>
+<td class="r b data">     1 938 750</td>
+<td class="r b data">        14 251</td>
+<td class="r b data">       608 488</td>
+<td class="r b data">       206 751</td>
+<td class="r b data">     1 617 738</td>
+<td class="r b data">     1 938 750</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1983</th>
+<td class="r b data">       149 458</td>
+<td class="r b data" nowrap>      -802 666</td>
+<td class="r b data" nowrap>    -1 582 374</td>
+<td class="r b data">        13 448</td>
+<td class="r b data" nowrap>      -494 482</td>
+<td class="r b data">       162 906</td>
+<td class="r b data" nowrap>    -1 297 148</td>
+<td class="r b data" nowrap>    -1 582 374</td>
+<td class="r b data">       330 958</td>
+<td class="r b data">       126 834</td>
+<td class="r b data">       339 876</td>
+<td class="r b data">        19 679</td>
+<td class="r b data">        63 008</td>
+<td class="r b data">       350 637</td>
+<td class="r b data">       189 842</td>
+<td class="r b data">       339 876</td>
+<td class="r b data">       181 500</td>
+<td class="r b data">       929 500</td>
+<td class="r b data">     1 922 250</td>
+<td class="r b data">         6 232</td>
+<td class="r b data">       557 491</td>
+<td class="r b data">       187 732</td>
+<td class="r b data">     1 486 991</td>
+<td class="r b data">     1 922 250</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1984</th>
+<td class="r b data">       118 317</td>
+<td class="r b data" nowrap>      -851 398</td>
+<td class="r b data" nowrap>    -1 447 925</td>
+<td class="r b data">         6 861</td>
+<td class="r b data" nowrap>      -399 259</td>
+<td class="r b data">       125 178</td>
+<td class="r b data" nowrap>    -1 250 657</td>
+<td class="r b data" nowrap>    -1 447 925</td>
+<td class="r b data">       319 067</td>
+<td class="r b data">       124 852</td>
+<td class="r b data">       372 575</td>
+<td class="r b data">        16 959</td>
+<td class="r b data">        64 817</td>
+<td class="r b data">       336 026</td>
+<td class="r b data">       189 669</td>
+<td class="r b data">       372 575</td>
+<td class="r b data">       200 750</td>
+<td class="r b data">       976 250</td>
+<td class="r b data">     1 820 500</td>
+<td class="r b data">        10 098</td>
+<td class="r b data">       464 076</td>
+<td class="r b data">       210 848</td>
+<td class="r b data">     1 440 326</td>
+<td class="r b data">     1 820 500</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1985</th>
+<td class="r b data">        91 808</td>
+<td class="r b data" nowrap>      -950 052</td>
+<td class="r b data" nowrap>    -1 209 988</td>
+<td class="r b data" nowrap>          -338</td>
+<td class="r b data" nowrap>      -385 926</td>
+<td class="r b data">        91 471</td>
+<td class="r b data" nowrap>    -1 335 978</td>
+<td class="r b data" nowrap>    -1 209 988</td>
+<td class="r b data">       320 058</td>
+<td class="r b data">       141 698</td>
+<td class="r b data">       379 512</td>
+<td class="r b data">        17 877</td>
+<td class="r b data">        59 083</td>
+<td class="r b data">       337 935</td>
+<td class="r b data">       200 780</td>
+<td class="r b data">       379 512</td>
+<td class="r b data">       228 250</td>
+<td class="r b data">     1 091 750</td>
+<td class="r b data">     1 589 500</td>
+<td class="r b data">        18 214</td>
+<td class="r b data">       445 009</td>
+<td class="r b data">       246 464</td>
+<td class="r b data">     1 536 759</td>
+<td class="r b data">     1 589 500</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1986</th>
+<td class="r b data">       116 658</td>
+<td class="r b data" nowrap>      -866 562</td>
+<td class="r b data" nowrap>    -1 294 125</td>
+<td class="r b data" nowrap>        -3 171</td>
+<td class="r b data" nowrap>      -416 756</td>
+<td class="r b data">       113 488</td>
+<td class="r b data" nowrap>    -1 283 317</td>
+<td class="r b data" nowrap>    -1 294 125</td>
+<td class="r b data">       309 158</td>
+<td class="r b data">       142 688</td>
+<td class="r b data">       394 375</td>
+<td class="r b data">        16 453</td>
+<td class="r b data">        58 191</td>
+<td class="r b data">       325 611</td>
+<td class="r b data">       200 879</td>
+<td class="r b data">       394 375</td>
+<td class="r b data">       192 500</td>
+<td class="r b data">     1 009 250</td>
+<td class="r b data">     1 688 500</td>
+<td class="r b data">        19 624</td>
+<td class="r b data">       474 946</td>
+<td class="r b data">       212 124</td>
+<td class="r b data">     1 484 196</td>
+<td class="r b data">     1 688 500</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1987</th>
+<td class="r b data">       131 422</td>
+<td class="r b data" nowrap>      -719 598</td>
+<td class="r b data" nowrap>    -1 325 666</td>
+<td class="r b data">         9 922</td>
+<td class="r b data" nowrap>      -426 400</td>
+<td class="r b data">       141 344</td>
+<td class="r b data" nowrap>    -1 145 998</td>
+<td class="r b data" nowrap>    -1 325 666</td>
+<td class="r b data">       334 922</td>
+<td class="r b data">       146 652</td>
+<td class="r b data">       426 084</td>
+<td class="r b data">        18 287</td>
+<td class="r b data">        55 366</td>
+<td class="r b data">       353 208</td>
+<td class="r b data">       202 018</td>
+<td class="r b data">       426 084</td>
+<td class="r b data">       203 500</td>
+<td class="r b data">       866 250</td>
+<td class="r b data">     1 751 750</td>
+<td class="r b data">         8 365</td>
+<td class="r b data">       481 766</td>
+<td class="r b data">       211 865</td>
+<td class="r b data">     1 348 016</td>
+<td class="r b data">     1 751 750</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">All</th>
+<td class="r b data">     1 187 972</td>
+<td class="r b data" nowrap>   -14 453 406</td>
+<td class="r b data" nowrap>   -18 361 877</td>
+<td class="r b data">        18 784</td>
+<td class="r b data" nowrap>    -7 843 179</td>
+<td class="r b data">     1 206 757</td>
+<td class="r b data" nowrap>   -22 296 586</td>
+<td class="r b data" nowrap>   -18 361 877</td>
+<td class="r b data">     3 756 472</td>
+<td class="r b data">     2 247 344</td>
+<td class="r b data">     4 256 873</td>
+<td class="r b data">       213 001</td>
+<td class="r b data">       756 742</td>
+<td class="r b data">     3 969 473</td>
+<td class="r b data">     3 004 086</td>
+<td class="r b data">     4 256 873</td>
+<td class="r b data">     2 568 500</td>
+<td class="r b data">    16 700 750</td>
+<td class="r b data">    22 618 750</td>
+<td class="r b data">       194 216</td>
+<td class="r b data">     8 599 921</td>
+<td class="r b data">     2 762 716</td>
+<td class="r b data">    25 300 671</td>
+<td class="r b data">    22 618 750</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Decline reasons, risk rules</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="l beforecaption">product css</td>
+</tr><tr><td><div align="center">
+<table class="table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Decline reason</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">Pct</th>
+<th class="c header" scope="col">Amount</th>
+<th class="c header" scope="col">Risk</th>
+<th class="c header" scope="col">Profit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">1 PD cut-off on css </th>
+<td class="r b data">         8 341</td>
+<td class="r b data">            32,60%</td>
+<td class="r b data">    41 705 000</td>
+<td class="r b data">      72,81%</td>
+<td class="r b data" nowrap>   -14 453 406</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">998 not active custo</th>
+<td class="r b data">        12 521</td>
+<td class="r b data">            48,94%</td>
+<td class="r b data">    62 605 000</td>
+<td class="r b data">      65,69%</td>
+<td class="r b data" nowrap>   -18 361 877</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">999ok               </th>
+<td class="r b data">         4 725</td>
+<td class="r b data">            18,47%</td>
+<td class="r b data">    23 625 000</td>
+<td class="r b data">      19,77%</td>
+<td class="r b data">     1 187 972</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">All</th>
+<td class="r b data">        25 587</td>
+<td class="r b data">           100,00%</td>
+<td class="r b data">   127 935 000</td>
+<td class="r b data">      59,53%</td>
+<td class="r b data" nowrap>   -31 627 311</td>
+</tr>
+</tbody>
+</table>
+</div>
+</tr>
+</table>
+</div>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Decline reasons, risk rules</td>
+</tr>
+</table><br>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="l beforecaption">product ins</td>
+</tr><tr><td><div align="center">
+<table class="table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" scope="col">Decline reason</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">Pct</th>
+<th class="c header" scope="col">Amount</th>
+<th class="c header" scope="col">Risk</th>
+<th class="c header" scope="col">Profit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">2 PD cut-off on ins </th>
+<td class="r b data">         9 289</td>
+<td class="r b data">            39,30%</td>
+<td class="r b data">    60 214 944</td>
+<td class="r b data">      26,94%</td>
+<td class="r b data" nowrap>    -7 338 746</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">3 PD,PDCross and PR </th>
+<td class="r b data">         8 127</td>
+<td class="r b data">            34,38%</td>
+<td class="r b data">    31 336 620</td>
+<td class="r b data">       5,36%</td>
+<td class="r b data" nowrap>      -504 434</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">999ok               </th>
+<td class="r b data">         6 221</td>
+<td class="r b data">            26,32%</td>
+<td class="r b data">    22 701 492</td>
+<td class="r b data">       2,17%</td>
+<td class="r b data">        18 784</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">All</th>
+<td class="r b data">        23 637</td>
+<td class="r b data">           100,00%</td>
+<td class="r b data">   114 253 056</td>
+<td class="r b data">      13,00%</td>
+<td class="r b data" nowrap>    -7 824 395</td>
+</tr>
+</tbody>
+</table>
+</div>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX4"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Probabilities of default and response</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="2" scope="col">Year</th>
+<th class="c header" colspan="4" scope="colgroup">PD</th>
+<th class="c header" colspan="4" scope="colgroup">Cross PD</th>
+<th class="c header" colspan="4" scope="colgroup">PR</th>
+</tr>
+<tr>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">All</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">All</th>
+<th class="c header" scope="col">A</th>
+<th class="c header" scope="col">D</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">All</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">1975</th>
+<td class="r b data">       8,64%</td>
+<td class="r b data">      49,90%</td>
+<td class="r b data">      59,01%</td>
+<td class="r b data">      42,88%</td>
+<td class="r b data">      21,69%</td>
+<td class="r b data">      41,42%</td>
+<td class="r b data">      33,64%</td>
+<td class="r b data">      37,75%</td>
+<td class="r b data">      23,97%</td>
+<td class="r b data">      28,49%</td>
+<td class="r b data">      14,43%</td>
+<td class="r b data">      27,34%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1976</th>
+<td class="r b data">       8,85%</td>
+<td class="r b data">      39,05%</td>
+<td class="r b data">      50,32%</td>
+<td class="r b data">      34,45%</td>
+<td class="r b data">      20,12%</td>
+<td class="r b data">      29,75%</td>
+<td class="r b data">      26,17%</td>
+<td class="r b data">      27,13%</td>
+<td class="r b data">      22,26%</td>
+<td class="r b data">      17,16%</td>
+<td class="r b data">      15,78%</td>
+<td class="r b data">      18,02%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1977</th>
+<td class="r b data">       7,94%</td>
+<td class="r b data">      31,59%</td>
+<td class="r b data">      40,27%</td>
+<td class="r b data">      28,92%</td>
+<td class="r b data">      19,52%</td>
+<td class="r b data">      24,55%</td>
+<td class="r b data">      20,32%</td>
+<td class="r b data">      22,33%</td>
+<td class="r b data">      23,54%</td>
+<td class="r b data">      14,67%</td>
+<td class="r b data">      18,39%</td>
+<td class="r b data">      17,56%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1978</th>
+<td class="r b data">       7,99%</td>
+<td class="r b data">      30,19%</td>
+<td class="r b data">      36,32%</td>
+<td class="r b data">      27,40%</td>
+<td class="r b data">      19,29%</td>
+<td class="r b data">      23,26%</td>
+<td class="r b data">      17,62%</td>
+<td class="r b data">      20,78%</td>
+<td class="r b data">      25,26%</td>
+<td class="r b data">      14,41%</td>
+<td class="r b data">      18,18%</td>
+<td class="r b data">      17,76%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1979</th>
+<td class="r b data">       7,62%</td>
+<td class="r b data">      29,68%</td>
+<td class="r b data">      34,47%</td>
+<td class="r b data">      26,59%</td>
+<td class="r b data">      18,78%</td>
+<td class="r b data">      23,15%</td>
+<td class="r b data">      16,63%</td>
+<td class="r b data">      20,30%</td>
+<td class="r b data">      24,51%</td>
+<td class="r b data">      14,62%</td>
+<td class="r b data">      17,76%</td>
+<td class="r b data">      17,59%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1980</th>
+<td class="r b data">       6,83%</td>
+<td class="r b data">      29,68%</td>
+<td class="r b data">      34,27%</td>
+<td class="r b data">      26,29%</td>
+<td class="r b data">      17,89%</td>
+<td class="r b data">      23,19%</td>
+<td class="r b data">      16,34%</td>
+<td class="r b data">      19,99%</td>
+<td class="r b data">      23,62%</td>
+<td class="r b data">      14,45%</td>
+<td class="r b data">      17,89%</td>
+<td class="r b data">      17,42%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1981</th>
+<td class="r b data">       7,70%</td>
+<td class="r b data">      28,03%</td>
+<td class="r b data">      32,08%</td>
+<td class="r b data">      24,64%</td>
+<td class="r b data">      19,05%</td>
+<td class="r b data">      22,27%</td>
+<td class="r b data">      15,81%</td>
+<td class="r b data">      19,66%</td>
+<td class="r b data">      23,84%</td>
+<td class="r b data">      13,89%</td>
+<td class="r b data">      18,14%</td>
+<td class="r b data">      17,37%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1982</th>
+<td class="r b data">       7,30%</td>
+<td class="r b data">      29,13%</td>
+<td class="r b data">      32,58%</td>
+<td class="r b data">      25,16%</td>
+<td class="r b data">      18,54%</td>
+<td class="r b data">      22,44%</td>
+<td class="r b data">      16,17%</td>
+<td class="r b data">      19,73%</td>
+<td class="r b data">      24,36%</td>
+<td class="r b data">      14,46%</td>
+<td class="r b data">      17,93%</td>
+<td class="r b data">      17,72%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1983</th>
+<td class="r b data">       7,52%</td>
+<td class="r b data">      27,65%</td>
+<td class="r b data">      32,24%</td>
+<td class="r b data">      24,09%</td>
+<td class="r b data">      18,70%</td>
+<td class="r b data">      21,92%</td>
+<td class="r b data">      15,92%</td>
+<td class="r b data">      19,48%</td>
+<td class="r b data">      25,20%</td>
+<td class="r b data">      13,44%</td>
+<td class="r b data">      18,29%</td>
+<td class="r b data">      17,61%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1984</th>
+<td class="r b data">       7,47%</td>
+<td class="r b data">      28,95%</td>
+<td class="r b data">      32,12%</td>
+<td class="r b data">      24,70%</td>
+<td class="r b data">      19,20%</td>
+<td class="r b data">      22,89%</td>
+<td class="r b data">      16,22%</td>
+<td class="r b data">      20,15%</td>
+<td class="r b data">      26,76%</td>
+<td class="r b data">      14,61%</td>
+<td class="r b data">      18,12%</td>
+<td class="r b data">      18,49%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1985</th>
+<td class="r b data">       7,39%</td>
+<td class="r b data">      29,93%</td>
+<td class="r b data">      31,52%</td>
+<td class="r b data">      24,75%</td>
+<td class="r b data">      19,16%</td>
+<td class="r b data">      24,10%</td>
+<td class="r b data">      15,36%</td>
+<td class="r b data">      20,59%</td>
+<td class="r b data">      25,14%</td>
+<td class="r b data">      15,80%</td>
+<td class="r b data">      17,37%</td>
+<td class="r b data">      18,52%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1986</th>
+<td class="r b data">       6,88%</td>
+<td class="r b data">      28,74%</td>
+<td class="r b data">      31,25%</td>
+<td class="r b data">      24,19%</td>
+<td class="r b data">      17,50%</td>
+<td class="r b data">      23,21%</td>
+<td class="r b data">      15,39%</td>
+<td class="r b data">      19,72%</td>
+<td class="r b data">      25,32%</td>
+<td class="r b data">      14,55%</td>
+<td class="r b data">      17,48%</td>
+<td class="r b data">      17,93%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1987</th>
+<td class="r b data">       6,94%</td>
+<td class="r b data">      27,34%</td>
+<td class="r b data">      31,43%</td>
+<td class="r b data">      23,34%</td>
+<td class="r b data">      17,62%</td>
+<td class="r b data">      22,41%</td>
+<td class="r b data">      15,42%</td>
+<td class="r b data">      19,21%</td>
+<td class="r b data">      24,82%</td>
+<td class="r b data">      14,01%</td>
+<td class="r b data">      18,06%</td>
+<td class="r b data">      17,90%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">All</th>
+<td class="r b data">       7,59%</td>
+<td class="r b data">      32,57%</td>
+<td class="r b data">      34,58%</td>
+<td class="r b data">      27,52%</td>
+<td class="r b data">      18,94%</td>
+<td class="r b data">      25,84%</td>
+<td class="r b data">      17,10%</td>
+<td class="r b data">      22,08%</td>
+<td class="r b data">      24,55%</td>
+<td class="r b data">      16,36%</td>
+<td class="r b data">      17,84%</td>
+<td class="r b data">      18,55%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX5"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Predictive measures for models</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="3" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="2" scope="col">Model</th>
+<th class="c header" colspan="2" scope="colgroup">Gini</th>
+</tr>
+<tr>
+<th class="c header" scope="col">Accepted  </th>
+<th class="c header" scope="col">All       </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">Cross PD on cross   </th>
+<td class="r b data">      26,71%</td>
+<td class="r b data">      43,53%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">PD on css           </th>
+<td class="r b data">      53,86%</td>
+<td class="r b data">      53,14%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">PD on ins           </th>
+<td class="r b data">      43,49%</td>
+<td class="r b data">      68,51%</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">PR on cross         </th>
+<td class="r b data">      73,26%</td>
+<td class="r b data">      71,16%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
