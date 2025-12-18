@@ -22,6 +22,10 @@ libname abt  "&dir.process/abt/" ;
 %include "&dir.process/codes/decision_engine.sas" / source2;
 
 
+sasfile pot.default load;
+sasfile pot.Production load;
+sasfile pot.transactions load;
+
 
 proc datasets lib=data nolist kill;
 quit;
@@ -60,6 +64,8 @@ index create aid;
 index create product;
 quit;
 
+sasfile data.trnsactions load;
+
 
 data data.decisions;
 length cid $10 aid $16 product $3 period $6 decision $1 decline_reason $20
@@ -78,6 +84,8 @@ index create cid;
 index create aid;
 index create product;
 quit;
+
+sasfile data.decisions load;
 
 
 %macro cust_level(version);
@@ -685,4 +693,3 @@ ods listing;
 
 %make_reports(1975,1987);
 /*%make_reports(1988,1998);*/
-
