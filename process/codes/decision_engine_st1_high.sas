@@ -3,14 +3,14 @@
 /*  (c) Karol Przanowski   */
 /*    kprzan@sgh.waw.pl    */
 /* pierwsza wersja wzorcowa*/
-%macro silnik_decyzyjny(wej,wyj);
+%macro scoring_engine(wej,wyj);
 
 data kal;
 set &wej;
 run;
 
 %let zbior=kal;
-%include "&dir.students/&nr_albumu./kalibracja/model_ins_risk/kod_do_skorowania.sas";
+%include "&dir.process/calibration/model_ins_risk/scoring_code.sas";
 
 data kal1;
 set kal_score;
@@ -21,7 +21,7 @@ drop psc: SCORECARD_POINTS;
 run;
 
 %let zbior=kal1;
-%include "&dir.students/&nr_albumu./kalibracja/model_css_risk/kod_do_skorowania.sas";
+%include "&dir.process/calibration/model_css_risk/scoring_code.sas";
 
 
 data kal2;
@@ -34,7 +34,7 @@ run;
 
 
 %let zbior=kal2;
-%include "&dir.students/&nr_albumu./kalibracja/model_cross_css_risk/kod_do_skorowania.sas";
+%include "&dir.process/calibration/model_cross_css_risk/scoring_code.sas";
 
 
 data kal3;
@@ -46,7 +46,7 @@ run;
 
 
 %let zbior=kal3;
-%include "&dir.students/&nr_albumu./kalibracja/model_response/kod_do_skorowania.sas";
+%include "&dir.process/calibration/model_response/scoring_code.sas";
 
 
 data kal4;
