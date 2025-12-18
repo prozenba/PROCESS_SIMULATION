@@ -6,9 +6,10 @@
 options mprint;
 options nomprint;
 
-%let dir=c:\karol\oferta_zajec\sas_cs_en\project\;
+/* %let dir=c:\karol\oferta_zajec\sas_cs_en\project\; */
+%let dir=&WORKSPACE_PATH./PROCESS_SIMULATION/;
 
-libname data "&dir.process\data\" compress=yes;
+libname data "&dir.process/data/" compress=yes;
 
 %let apr_ins=0.01;
 %let apr_css=0.18;
@@ -27,7 +28,7 @@ where '197501'<=period<='198712' and decision='A';
 run;
 
 %let zbior=cal;
-%include "&dir.process\calibration\model_ins_risk\scoring_code.sas";
+%include "&dir.process/calibration/model_ins_risk/scoring_code.sas";
 
 data cal1;
 set cal_score;
@@ -54,7 +55,7 @@ run;
 
 
 %let zbior=cal1;
-%include "&dir.process\calibration\model_css_risk\scoring_code.sas";
+%include "&dir.process/calibration/model_css_risk/scoring_code.sas";
 
 
 data cal2;
@@ -76,7 +77,7 @@ run;
 /*run;*/
 
 %let zbior=cal2;
-%include "&dir.process\calibration\model_cross_css_risk\scoring_code.sas";
+%include "&dir.process/calibration/model_cross_css_risk/scoring_code.sas";
 
 /**/
 /*data cal3;*/
@@ -106,7 +107,7 @@ run;
 
 
 %let zbior=cal3;
-%include "&dir.process\calibration\model_response\scoring_code.sas";
+%include "&dir.process/calibration/model_response/scoring_code.sas";
 
 
 data cal4;
@@ -240,6 +241,6 @@ table product, decision='' all, profit=''*
 (n*f=nlnum14. colpctn*f=nlnum12.2 sum*f=nlnum14.);
 run;
 
-/*1 687 901*/
-/*1 359 256*/
+/*1ï¿½687ï¿½901*/
+/*1ï¿½359ï¿½256*/
 /*all tests*/
