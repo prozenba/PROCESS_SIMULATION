@@ -12,15 +12,18 @@ options nomprint;
 
 libname dataP parquet "&dir.process/data/" ;
 libname abtP parquet "&dir.process/abt/" ;
-libname pot parquet  "&dir.potential" ;
+libname potP parquet  "&dir.potential" ;
 
 libname data  "&dir.process/data/" ;
 libname abt  "&dir.process/abt/" ;
-/* libname pot parquet  "&dir.potential" ; */
+libname pot   "&dir.potential" compress=yes;
 
 %include "&dir.codes/abt_behavioral_columns.sas" / source2;
 %include "&dir.process/codes/decision_engine.sas" / source2;
 
+
+proc copy in=potP out=pot noclone;
+run;
 
 sasfile pot.default load;
 sasfile pot.Production load;
