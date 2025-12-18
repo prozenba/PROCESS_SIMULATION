@@ -16,7 +16,7 @@ libname potP parquet  "&dir.potential" ;
 
 libname data  "&dir.process/data/" ;
 libname abt  "&dir.process/abt/" ;
-libname pot   "&dir.potential" compress=yes;
+libname pot   "&dir.potential" ;
 
 %include "&dir.codes/abt_behavioral_columns.sas" / source2;
 %include "&dir.process/codes/decision_engine.sas" / source2;
@@ -55,7 +55,7 @@ delete;
 run;
 proc datasets lib=data nolist;
 modify transactions;
-index delete _all_;
+/* index delete _all_; */
 index create period;
 index create status;
 index create comp=(status period);
@@ -67,7 +67,7 @@ index create aid;
 index create product;
 quit;
 
-sasfile data.trnsactions load;
+sasfile data.transactions load;
 
 
 data data.decisions;
@@ -78,7 +78,7 @@ format pd cross_pd pr nlpct12.2;
 run;
 proc datasets lib=data nolist;
 modify decisions;
-index delete _all_;
+/* index delete _all_; */
 index create period;
 index create comp2=(aid period);
 index create comp3=(cid period);
@@ -515,6 +515,7 @@ by aid;
 if z;
 run;
 
+sasfile data.Decisions close;
 proc sort data=data.Decisions force;
 by aid;
 run;
@@ -524,7 +525,7 @@ by aid;
 if z;
 year=compress(put(input(period,yymmn6.),year4.));
 run;
-
+sasfile data.Decisions load;
 
 data data.profit;
 set data.decisions;
