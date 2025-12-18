@@ -10,7 +10,7 @@ set &wej;
 run;
 
 %let zbior=kal;
-%include "&dir.students\&nr_albumu.\kalibracja\model_ins_risk\kod_do_skorowania.sas";
+%include "&dir.students/&nr_albumu./kalibracja/model_ins_risk/kod_do_skorowania.sas";
 
 data kal1;
 set kal_score;
@@ -21,7 +21,7 @@ drop psc: SCORECARD_POINTS;
 run;
 
 %let zbior=kal1;
-%include "&dir.students\&nr_albumu.\kalibracja\model_css_risk\kod_do_skorowania.sas";
+%include "&dir.students/&nr_albumu./kalibracja/model_css_risk/kod_do_skorowania.sas";
 
 
 data kal2;
@@ -34,7 +34,7 @@ run;
 
 
 %let zbior=kal2;
-%include "&dir.students\&nr_albumu.\kalibracja\model_cross_css_risk\kod_do_skorowania.sas";
+%include "&dir.students/&nr_albumu./kalibracja/model_cross_css_risk/kod_do_skorowania.sas";
 
 
 data kal3;
@@ -46,7 +46,7 @@ run;
 
 
 %let zbior=kal3;
-%include "&dir.students\&nr_albumu.\kalibracja\model_response\kod_do_skorowania.sas";
+%include "&dir.students/&nr_albumu./kalibracja/model_response/kod_do_skorowania.sas";
 
 
 data kal4;

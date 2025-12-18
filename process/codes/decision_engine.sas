@@ -117,4 +117,3 @@ app_n_installments pd cross_pd pr;
 format pd cross_pd pr nlpct12.2;
 run;
 %mend;
-
