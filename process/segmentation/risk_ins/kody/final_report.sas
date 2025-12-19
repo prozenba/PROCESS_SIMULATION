@@ -398,7 +398,7 @@ quit;
 
 
 
-/*na nowo tworzymy listê zmiennych &zmienne*/
+/*na nowo tworzymy listÃª zmiennych &zmienne*/
 proc sql noprint;
 select distinct upcase('WOE_'||trim(Variable)),
 quote(upcase(Variable)),
@@ -434,7 +434,7 @@ quit;
 
 
 
-/*skorowanie zbiorów*/
+/*skorowanie zbiorÃ³w*/
 data kar;
 set modele.Scorecard_Scorecard&the_best_model(rename=(_variable_=variable));
 variable=upcase(variable);
@@ -1484,4 +1484,5 @@ quit;
 
 ods html close;
 ods listing;
-goptions reset=all device=win;
+goptions reset=all ;
+
