@@ -9,7 +9,11 @@ options nomprint;
 /* %let dir=c:\karol\oferta_zajec\sas_cs_en\project\; */
 %let dir=&WORKSPACE_PATH./PROCESS_SIMULATION/;
 
+libname dataP parquet "&dir.process/data/" ;
 libname data "&dir.process/data/" compress=yes;
+
+proc copy in=dataP out=data noclone;
+run;
 
 %let apr_ins=0.01;
 %let apr_css=0.18;
@@ -244,3 +248,4 @@ run;
 /*1�687�901*/
 /*1�359�256*/
 /*all tests*/
+
